@@ -9,6 +9,7 @@ const ContactForm = lazy(() => import('../components/ContactForm'));
 const InstagramFeed = lazy(() => import('../components/InstagramFeed'));
 
 const Home = () => {
+  // Expanded portfolio images for home page showcase
   const portfolioImages = [
     {
       id: 1,
@@ -44,6 +45,24 @@ const Home = () => {
       id: 6,
       src: '/images/birthdays/IMG_2705.JPG',
       alt: 'Elegant birthday celebration balloon garland',
+      category: 'birthday'
+    },
+    {
+      id: 7,
+      src: '/images/bridal-showers/DSC_2863.jpg',
+      alt: 'Elegant bridal shower welcome display',
+      category: 'bridal'
+    },
+    {
+      id: 8,
+      src: '/images/corporate/EIVQ6040.JPG',
+      alt: 'Corporate networking event balloon decoration',
+      category: 'corporate'
+    },
+    {
+      id: 9,
+      src: '/images/birthdays/IMG_4642.JPG',
+      alt: 'Grand birthday celebration balloon installation',
       category: 'birthday'
     }
   ];
@@ -185,7 +204,7 @@ const Home = () => {
 
           <Suspense fallback={
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {Array.from({ length: 6 }).map((_, i) => (
+              {Array.from({ length: 9 }).map((_, i) => (
                 <div key={i} className="aspect-square bg-gray-200 rounded-lg animate-pulse" />
               ))}
             </div>
