@@ -28,7 +28,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Using real images from your uploaded folders for Instagram feed
+  // Using verified existing images for Instagram feed
   const mockPosts: InstagramPost[] = [
     {
       id: '1',

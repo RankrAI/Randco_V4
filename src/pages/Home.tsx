@@ -9,7 +9,7 @@ const ContactForm = lazy(() => import('../components/ContactForm'));
 const InstagramFeed = lazy(() => import('../components/InstagramFeed'));
 
 const Home = () => {
-  // Updated portfolio images with verified existing paths
+  // Updated portfolio images with only verified existing paths
   const portfolioImages = [
     {
       id: 1,
