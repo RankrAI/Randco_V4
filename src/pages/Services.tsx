@@ -7,7 +7,7 @@ const Services = () => {
     {
       title: 'Baby Showers',
       description: 'Sweet and whimsical balloon designs that welcome the new arrival with joy, love, and celebration.',
-      image: '/baby-showers/IMG_0796.JPEG',
+      image: '/images/baby-showers/IMG_0796.JPEG',
       icon: Baby,
       link: '/services/baby-showers',
       features: ['Gender Reveals', 'Themed Displays', 'Nursery Colors', 'Interactive Elements']
@@ -15,7 +15,7 @@ const Services = () => {
     {
       title: 'Birthdays',
       description: 'Make birthdays unforgettable with custom balloon designs that bring joy and wonder to celebrations of any age.',
-      image: '/Birthdays/IMG_2972.jpg',
+      image: '/images/birthdays/IMG_2972.jpg',
       icon: Gift,
       link: '/services/birthdays',
       features: ['Themed Designs', 'Number Displays', 'Interactive Elements', 'Photo Opportunities']
@@ -23,7 +23,7 @@ const Services = () => {
     {
       title: 'Bridal Showers',
       description: 'Elegant and romantic balloon decor that celebrates the bride-to-be with sophisticated charm and luxury styling.',
-      image: '/bridal-showers/LandingPage.jpg',
+      image: '/images/bridal-showers/LandingPage.jpg',
       icon: Heart,
       link: '/services/bridal-showers',
       features: ['Romantic Arches', 'Photo Backdrops', 'Table Centerpieces', 'Gift Table Decor']
@@ -31,7 +31,7 @@ const Services = () => {
     {
       title: 'Corporate Events',
       description: 'Professional balloon decor that elevates your corporate gatherings with luxury and sophistication.',
-      image: '/Corporate/20210721_155342.jpg',
+      image: '/images/corporate/20210721_155342.jpg',
       icon: Building,
       link: '/services/corporate',
       features: ['Brand Integration', 'Conference Decor', 'Product Launches', 'Networking Events']
@@ -39,7 +39,7 @@ const Services = () => {
     {
       title: 'Holidays',
       description: 'Festive balloon decor for seasonal celebrations, bringing holiday magic to your special gatherings.',
-      image: '/Holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg',
+      image: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg',
       icon: TreePine,
       link: '/services/holidays',
       features: ['Seasonal Themes', 'Holiday Colors', 'Festive Displays', 'Family Gatherings']
