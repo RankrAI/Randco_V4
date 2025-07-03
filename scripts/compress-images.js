@@ -11,9 +11,18 @@ const compressImage = async (inputPath, outputPath, quality = 80) => {
     const stats = fs.statSync(inputPath);
     const originalSize = stats.size;
     
+    // Skip if file is already small enough
+    if (originalSize < 2 * 1024 * 1024) { // Less than 2MB
+      console.log(`⏭️  ${path.basename(inputPath)}: Already optimized (${(originalSize/1024/1024).toFixed(1)}MB)`);
+      return;
+    }
+    
     await sharp(inputPath)
-      .jpeg({ quality, progressive: true })
-      .toFile(outputPath);
+      .jpeg({ quality, progressive: true, mozjpeg: true })
+      .toFile(outputPath + '.tmp');
+    
+    // Replace original with compressed version
+    fs.renameSync(outputPath + '.tmp', outputPath);
     
     const newStats = fs.statSync(outputPath);
     const newSize = newStats.size;
@@ -22,40 +31,70 @@ const compressImage = async (inputPath, outputPath, quality = 80) => {
     console.log(`✅ ${path.basename(inputPath)}: ${(originalSize/1024/1024).toFixed(1)}MB → ${(newSize/1024/1024).toFixed(1)}MB (${savings}% reduction)`);
   } catch (error) {
     console.error(`❌ Error compressing ${inputPath}:`, error.message);
+    // Clean up temp file if it exists
+    try {
+      fs.unlinkSync(outputPath + '.tmp');
+    } catch {}
   }
 };
 
-const compressLargeImages = async () => {
+const scanAndCompressImages = async () => {
   const imagesDir = path.join(__dirname, '../public/images');
   
-  // Large files that need compression
-  const largeFiles = [
-    'birthdays/IMG_4642.JPG',
-    'birthdays/IMG_4644.JPG', 
-    'bridal-showers/DSC_2863.jpg',
-    'bridal-showers/LandingPage.jpg',
-    'bridal-showers/20240811_105747.jpg',
-    'corporate/20240617_192834.jpg',
-    'corporate/EIVQ6040.JPG',
-    'bridal-showers/20220731_130944.jpg',
-    'birthdays/IMG_2939.JPG',
-    'birthdays/IMG_2705.JPG',
-    'birthdays/77E0D959-4DDB-4D6C-89FB-8D65667C40F1.jpg',
-    'birthdays/4E4B437F-48E3-4169-9335-C8A235E90DD8.jpg'
-  ];
-  
-  console.log('🗜️  Compressing large images...\n');
-  
-  for (const file of largeFiles) {
-    const inputPath = path.join(imagesDir, file);
-    const outputPath = inputPath; // Overwrite original
-    
-    if (fs.existsSync(inputPath)) {
-      await compressImage(inputPath, outputPath, 75); // More aggressive compression
-    }
+  if (!fs.existsSync(imagesDir)) {
+    console.error('❌ Images directory not found at:', imagesDir);
+    return;
   }
   
+  console.log('🗜️  Scanning and compressing large images...\n');
+  
+  const scanDirectory = async (dir) => {
+    const items = fs.readdirSync(dir);
+    
+    for (const item of items) {
+      const fullPath = path.join(dir, item);
+      const stat = fs.statSync(fullPath);
+      
+      if (stat.isDirectory()) {
+        await scanDirectory(fullPath);
+      } else if (['.jpg', '.jpeg', '.JPG', '.JPEG'].includes(path.extname(item))) {
+        const sizeInMB = stat.size / (1024 * 1024);
+        
+        // Compress files larger than 2MB
+        if (sizeInMB > 2) {
+          let quality = 75; // Default aggressive compression
+          
+          // Extra aggressive for very large files
+          if (sizeInMB > 10) quality = 65;
+          if (sizeInMB > 15) quality = 60;
+          
+          await compressImage(fullPath, fullPath, quality);
+        }
+      }
+    }
+  };
+  
+  await scanDirectory(imagesDir);
+  
   console.log('\n✨ Image compression complete!');
+  
+  // Calculate total size after compression
+  let totalSize = 0;
+  const calculateSize = (dir) => {
+    const items = fs.readdirSync(dir);
+    items.forEach(item => {
+      const fullPath = path.join(dir, item);
+      const stat = fs.statSync(fullPath);
+      if (stat.isDirectory()) {
+        calculateSize(fullPath);
+      } else {
+        totalSize += stat.size;
+      }
+    });
+  };
+  
+  calculateSize(imagesDir);
+  console.log(`📦 Total size after compression: ${(totalSize/1024/1024).toFixed(1)}MB`);
 };
 
-compressLargeImages().catch(console.error);
+scanAndCompressImages().catch(console.error);
