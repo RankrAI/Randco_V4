@@ -97,15 +97,17 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Critical above-the-fold content */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden hero-section">
         <div className="absolute inset-0">
-          <LazyImage 
+          <img 
             src="/images/bridal-showers/LandingPage.jpg"
             alt="Luxury balloon decor by R&Co Events - Premium event design in Toronto"
-            className="w-full h-full"
+            className="w-full h-full object-cover img-optimized"
             style={{ objectPosition: 'center center' }}
             width="1920"
             height="1080"
+            loading="eager"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
