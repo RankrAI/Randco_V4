@@ -26,27 +26,15 @@ const Corporate = () => {
     },
     {
       id: 4,
-      src: '/images/corporate/IMG_2609.JPG',
-      alt: 'Corporate product launch balloon decor',
-      category: 'launch'
-    },
-    {
-      id: 5,
       src: '/images/corporate/EIVQ6040.JPG',
       alt: 'Corporate networking event balloon decoration',
       category: 'networking'
     },
     {
-      id: 6,
+      id: 5,
       src: '/images/corporate/20240617_192834.jpg',
       alt: 'Corporate gala balloon setup',
       category: 'gala'
-    },
-    {
-      id: 7,
-      src: '/images/corporate/20210512_115014.jpg',
-      alt: 'Professional corporate balloon installation',
-      category: 'installation'
     }
   ];
 
@@ -87,13 +75,13 @@ const Corporate = () => {
     {
       title: 'Retail & Professional Services',
       description: 'Grand openings, launches, and client appreciation events for dentists, optometrists, retail stores, and professional practices',
-      image: '/images/corporate/20210512_115014.jpg',
+      image: '/images/corporate/IMG_1428.JPEG',
       icon: ShoppingBag
     },
     {
       title: 'Non-Profits',
       description: 'Uplifting decor for fundraisers, galas, and community events',
-      image: '/images/corporate/IMG_2609.JPG',
+      image: '/images/corporate/EIVQ6040.JPG',
       icon: Heart
     }
   ];

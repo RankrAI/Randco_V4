@@ -9,7 +9,7 @@ const ContactForm = lazy(() => import('../components/ContactForm'));
 const InstagramFeed = lazy(() => import('../components/InstagramFeed'));
 
 const Home = () => {
-  // Expanded portfolio images for home page showcase
+  // Updated portfolio images with verified paths
   const portfolioImages = [
     {
       id: 1,
@@ -61,8 +61,8 @@ const Home = () => {
     },
     {
       id: 9,
-      src: '/images/birthdays/IMG_4642.JPG',
-      alt: 'Grand birthday celebration balloon installation',
+      src: '/images/birthdays/IMG_2939.JPG',
+      alt: 'Stunning birthday celebration balloon installation',
       category: 'birthday'
     }
   ];

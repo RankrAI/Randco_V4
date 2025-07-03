@@ -5,7 +5,7 @@ import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';
 
 const Holidays = () => {
-  // Reduced holiday images for better performance
+  // Updated holiday images with verified paths
   const holidayImages = [
     {
       id: 1,
