@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="/bridal-showers/LandingPage.jpg"
+                src="/images/bridal-showers/LandingPage.jpg"
                 alt="R&Co Events creating beautiful luxury balloon decor with elegant romantic styling"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}
@@ -146,7 +146,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="/Holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg"
+                src="/images/Holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg"
                 alt="Personal consultation and luxury balloon decor planning with R&Co Events team"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}
