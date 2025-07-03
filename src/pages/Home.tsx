@@ -12,37 +12,37 @@ const Home = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: '/bridal-showers/LandingPage.jpg',
+      src: '/images/bridal-showers/LandingPage.jpg',
       alt: 'Elegant bridal shower balloon arch with romantic pink and gold colors',
       category: 'bridal'
     },
     {
       id: 2,
-      src: '/Corporate/20210721_155342.jpg',
+      src: '/images/Corporate/20210721_155342.jpg',
       alt: 'Professional corporate event balloon decor installation',
       category: 'corporate'
     },
     {
       id: 3,
-      src: '/Birthdays/IMG_5429.JPG',
+      src: '/images/Birthdays/IMG_5429.JPG',
       alt: 'Spectacular birthday celebration balloon display',
       category: 'birthday'
     },
     {
       id: 4,
-      src: '/baby-showers/IMG_0796.JPEG',
+      src: '/images/baby-showers/IMG_0796.JPEG',
       alt: 'Sweet baby shower balloon centerpiece with pastel colors',
       category: 'baby'
     },
     {
       id: 5,
-      src: '/Holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
+      src: '/images/Holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       alt: 'Festive holiday party balloon wall decoration',
       category: 'holiday'
     },
     {
       id: 6,
-      src: '/Birthdays/IMG_2705.JPG',
+      src: '/images/Birthdays/IMG_2705.JPG',
       alt: 'Elegant birthday celebration balloon garland',
       category: 'birthday'
     }
@@ -55,7 +55,7 @@ const Home = () => {
       event: 'Bridal Shower',
       rating: 5,
       text: 'R&Co Events made us feel like family from day one. The luxury balloon decor was absolutely stunning and exceeded all our expectations!',
-      image: '/bridal-showers/LandingPage.jpg'
+      image: '/images/bridal-showers/LandingPage.jpg'
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ const Home = () => {
       event: 'Corporate Gala',
       rating: 5,
       text: 'The premium quality and attention to detail was exceptional. Our corporate gala was elevated beyond expectations with their sophisticated designs.',
-      image: '/Corporate/20210721_155342.jpg'
+      image: '/images/Corporate/20210721_155342.jpg'
     },
     {
       id: 3,
@@ -71,7 +71,7 @@ const Home = () => {
       event: 'Baby Shower',
       rating: 5,
       text: 'From concept to execution, R&Co Events delivered pure magic. The luxury balloon decor created the perfect atmosphere for our celebration.',
-      image: '/baby-showers/IMG_0796.JPEG'
+      image: '/images/baby-showers/IMG_0796.JPEG'
     }
   ];
 
@@ -81,7 +81,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <LazyImage 
-            src="/bridal-showers/LandingPage.jpg"
+            src="/images/bridal-showers/LandingPage.jpg"
             alt="Luxury balloon decor by R&Co Events - Premium event design in Toronto"
             className="w-full h-full"
             style={{ objectPosition: 'center center' }}
