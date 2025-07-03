@@ -5,7 +5,7 @@ import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';
 
 const Holidays = () => {
-  // Updated holiday images with verified paths
+  // Updated holiday images with verified existing paths
   const holidayImages = [
     {
       id: 1,
@@ -30,6 +30,12 @@ const Holidays = () => {
       src: '/images/holidays/20210509_113246.jpg',
       alt: 'Festive holiday balloon decor setup',
       category: 'setup'
+    },
+    {
+      id: 5,
+      src: '/images/holidays/IMG_0232.JPEG',
+      alt: 'Holiday celebration balloon display',
+      category: 'display'
     }
   ];
 
@@ -239,7 +245,7 @@ const Holidays = () => {
             </p>
           </div>
 
-          <Gallery images={holidayImages} columns={2} className="mb-12" />
+          <Gallery images={holidayImages} columns={3} className="mb-12" />
 
           <div className="text-center">
             <Link

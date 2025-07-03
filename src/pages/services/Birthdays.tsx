@@ -5,7 +5,7 @@ import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';
 
 const Birthdays = () => {
-  // Updated birthday images with verified paths
+  // Updated birthday images with verified existing paths
   const birthdayImages = [
     {
       id: 1,
@@ -33,9 +33,9 @@ const Birthdays = () => {
     },
     {
       id: 5,
-      src: '/images/birthdays/IMG_2669.JPG',
-      alt: 'Sweet sixteen party balloon arrangement',
-      category: 'teen'
+      src: '/images/birthdays/AJYE6187.JPG',
+      alt: 'Professional birthday balloon setup',
+      category: 'professional'
     },
     {
       id: 6,
