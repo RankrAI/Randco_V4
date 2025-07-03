@@ -8,79 +8,79 @@ const Birthdays = () => {
   const birthdayImages = [
     {
       id: 1,
-      src: '/Birthdays/IMG_5429.JPG',
+      src: '/images/Birthdays/IMG_5429.JPG',
       alt: 'Stunning birthday party balloon arch with vibrant colors',
       category: 'arch'
     },
     {
       id: 2,
-      src: '/Birthdays/IMG_2972.jpg',
+      src: '/images/Birthdays/IMG_2972.jpg',
       alt: 'Colorful children birthday party balloon setup',
       category: 'children'
     },
     {
       id: 3,
-      src: '/Birthdays/IMG_2705.JPG',
+      src: '/images/Birthdays/IMG_2705.JPG',
       alt: 'Elegant adult birthday celebration balloons',
       category: 'adult'
     },
     {
       id: 4,
-      src: '/Birthdays/IMG_2939.JPG',
+      src: '/images/Birthdays/IMG_2939.JPG',
       alt: 'Milestone birthday balloon decor',
       category: 'milestone'
     },
     {
       id: 5,
-      src: '/Birthdays/IMG_2862.JPG',
+      src: '/images/Birthdays/IMG_2862.JPG',
       alt: 'Sweet sixteen party balloon arrangement',
       category: 'teen'
     },
     {
       id: 6,
-      src: '/Birthdays/IMG_2854.JPG',
+      src: '/images/Birthdays/IMG_2854.JPG',
       alt: 'First birthday celebration balloons',
       category: 'first'
     },
     {
       id: 7,
-      src: '/Birthdays/20210905_143754.jpg',
+      src: '/images/Birthdays/20210905_143754.jpg',
       alt: 'Elegant adult birthday balloon display',
       category: 'elegant'
     },
     {
       id: 8,
-      src: '/Birthdays/IMG_4644.JPG',
+      src: '/images/Birthdays/IMG_4644.JPG',
       alt: 'Birthday celebration balloon centerpiece',
       category: 'centerpiece'
     },
     {
       id: 9,
-      src: '/Birthdays/IMG_2583.JPG',
+      src: '/images/Birthdays/IMG_2583.JPG',
       alt: 'Birthday party balloon garland',
       category: 'garland'
     },
     {
       id: 10,
-      src: '/Birthdays/IMG_2669.JPG',
+      src: '/images/Birthdays/IMG_2669.JPG',
       alt: 'Birthday balloon backdrop',
       category: 'backdrop'
     },
     {
       id: 11,
-      src: '/Birthdays/IMG_2710.JPG',
+      src: '/images/Birthdays/IMG_2710.JPG',
       alt: 'Birthday celebration balloon installation',
       category: 'installation'
     },
     {
       id: 12,
-      src: '/Birthdays/IMG_2908.JPG',
+      src: '/images/Birthdays/IMG_2908.JPG',
       alt: 'Birthday party balloon arrangement',
       category: 'arrangement'
     },
     {
       id: 13,
-      src: '/Birthdays/20231103_171244.jpg',
+      src: '/images/Birthdays/20231103_171244.jpg',
       alt: 'Spectacular birthday celebration balloon display',
       category: 'celebration'
     }
@@ -156,7 +156,7 @@ const Birthdays = () => {
             </div>
             <div className="relative">
               <img
-                src="/Birthdays/IMG_5429.JPG"
+                src="/images/Birthdays/IMG_5429.JPG"
                 alt="Colorful birthday party balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}
