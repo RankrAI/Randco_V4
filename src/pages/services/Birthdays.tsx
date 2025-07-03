@@ -5,6 +5,7 @@ import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';
 
 const Birthdays = () => {
+  // Reduced birthday images for better performance
   const birthdayImages = [
     {
       id: 1,
@@ -41,36 +42,6 @@ const Birthdays = () => {
       src: '/images/birthdays/20210905_143754.jpg',
       alt: 'Elegant adult birthday balloon display',
       category: 'elegant'
-    },
-    {
-      id: 7,
-      src: '/images/birthdays/IMG_4644.JPG',
-      alt: 'Birthday celebration balloon centerpiece',
-      category: 'centerpiece'
-    },
-    {
-      id: 8,
-      src: '/images/birthdays/IMG_2583.JPG',
-      alt: 'Birthday party balloon garland',
-      category: 'garland'
-    },
-    {
-      id: 9,
-      src: '/images/birthdays/IMG_2669.JPG',
-      alt: 'Birthday balloon backdrop',
-      category: 'backdrop'
-    },
-    {
-      id: 10,
-      src: '/images/birthdays/IMG_2710.JPG',
-      alt: 'Birthday celebration balloon installation',
-      category: 'installation'
-    },
-    {
-      id: 11,
-      src: '/images/birthdays/IMG_2908.JPG',
-      alt: 'Birthday party balloon arrangement',
-      category: 'arrangement'
     }
   ];
 
@@ -244,7 +215,7 @@ const Birthdays = () => {
             </p>
           </div>
 
-          <Gallery images={birthdayImages} columns={4} className="mb-12" />
+          <Gallery images={birthdayImages} columns={3} className="mb-12" />
 
           <div className="text-center">
             <Link
@@ -258,54 +229,8 @@ const Birthdays = () => {
         </div>
       </section>
 
-      {/* Customization Options */}
-      <section className="py-20 bg-cream-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal-900 mb-6">
-              Personalization Options
-            </h2>
-            <p className="font-sans text-xl text-charcoal-600">
-              Make the celebration uniquely theirs with our customization options.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="font-serif text-xl font-semibold text-charcoal-900 mb-4">Custom Numbers</h3>
-              <p className="font-sans text-charcoal-600 mb-4">Giant number balloons in any age, available in various colors and finishes.</p>
-              <ul className="space-y-2 text-sm">
-                <li className="font-sans text-charcoal-700">• Foil numbers</li>
-                <li className="font-sans text-charcoal-700">• Balloon mosaics</li>
-                <li className="font-sans text-charcoal-700">• LED-lit numbers</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="font-serif text-xl font-semibold text-charcoal-900 mb-4">Name Displays</h3>
-              <p className="font-sans text-charcoal-600 mb-4">Personalized name displays that make the birthday person feel special.</p>
-              <ul className="space-y-2 text-sm">
-                <li className="font-sans text-charcoal-700">• Letter balloons</li>
-                <li className="font-sans text-charcoal-700">• Script writing</li>
-                <li className="font-sans text-charcoal-700">• Marquee letters</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="font-serif text-xl font-semibold text-charcoal-900 mb-4">Theme Integration</h3>
-              <p className="font-sans text-charcoal-600 mb-4">Incorporate favorite characters, hobbies, or interests into the design.</p>
-              <ul className="space-y-2 text-sm">
-                <li className="font-sans text-charcoal-700">• Character themes</li>
-                <li className="font-sans text-charcoal-700">• Hobby-based designs</li>
-                <li className="font-sans text-charcoal-700">• Color preferences</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-cream-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm 
             title="Plan the Perfect Birthday Celebration"

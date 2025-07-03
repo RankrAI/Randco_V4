@@ -5,6 +5,7 @@ import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';
 
 const Holidays = () => {
+  // Reduced holiday images for better performance
   const holidayImages = [
     {
       id: 1,
@@ -20,18 +21,12 @@ const Holidays = () => {
     },
     {
       id: 3,
-      src: '/images/holidays/IMG_0232.JPEG',
-      alt: 'Holiday celebration balloon display',
-      category: 'celebration'
-    },
-    {
-      id: 4,
       src: '/images/holidays/20210511_193336.jpg',
       alt: 'Beautiful holiday balloon installation with elegant styling',
       category: 'installation'
     },
     {
-      id: 5,
+      id: 4,
       src: '/images/holidays/20210509_113246.jpg',
       alt: 'Festive holiday balloon decor setup',
       category: 'setup'
@@ -244,7 +239,7 @@ const Holidays = () => {
             </p>
           </div>
 
-          <Gallery images={holidayImages} columns={4} className="mb-12" />
+          <Gallery images={holidayImages} columns={2} className="mb-12" />
 
           <div className="text-center">
             <Link
@@ -258,81 +253,8 @@ const Holidays = () => {
         </div>
       </section>
 
-      {/* Planning Tips */}
-      <section className="py-20 bg-cream-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal-900 mb-6">
-              Holiday Planning Tips
-            </h2>
-            <p className="font-sans text-xl text-charcoal-600">
-              Make your holiday celebrations extra special with thoughtful planning and family touches.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="font-serif text-2xl font-semibold text-charcoal-900 mb-6">Design Considerations</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-4 mt-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-sans font-semibold text-charcoal-900">Seasonal Colors</h4>
-                    <p className="font-sans text-charcoal-600">Choose colors that reflect the season and create the right mood for your celebration.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-4 mt-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-sans font-semibold text-charcoal-900">Family Traditions</h4>
-                    <p className="font-sans text-charcoal-600">Incorporate your family's unique traditions and memories into the decor design.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-4 mt-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-sans font-semibold text-charcoal-900">Venue Harmony</h4>
-                    <p className="font-sans text-charcoal-600">Design decor that complements your venue and enhances the holiday atmosphere.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="font-serif text-2xl font-semibold text-charcoal-900 mb-6">What's Included</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Seasonal design consultation</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Custom holiday themes</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Professional setup & breakdown</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Weather-appropriate materials</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Family photo assistance</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-600 rounded-full mr-3" />
-                  <span className="font-sans text-charcoal-700">Holiday magic guarantee</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-cream-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm 
             title="Create Holiday Magic Together"

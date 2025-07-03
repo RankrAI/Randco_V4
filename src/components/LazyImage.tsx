@@ -7,7 +7,6 @@ interface LazyImageProps {
   width?: string | number;
   height?: string | number;
   style?: React.CSSProperties;
-  placeholder?: string;
 }
 
 const LazyImage: React.FC<LazyImageProps> = ({
@@ -16,8 +15,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
   className = '',
   width,
   height,
-  style,
-  placeholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yMCAyOEMyNC40MTgzIDI4IDI4IDI0LjQxODMgMjggMjBDMjggMTUuNTgxNyAyNC40MTgzIDEyIDIwIDEyQzE1LjU4MTcgMTIgMTIgMTUuNTgxNyAxMiAyMEMxMiAyNC40MTgzIDE1LjU4MTcgMjggMjAgMjhaIiBmaWxsPSIjRTVFN0VCIi8+CjxwYXRoIGQ9Ik0yMCAyNEMyMi4yMDkxIDI0IDI0IDIyLjIwOTEgMjQgMjBDMjQgMTcuNzkwOSAyMi4yMDkxIDE2IDIwIDE2QzE3Ljc5MDkgMTYgMTYgMTcuNzkwOSAxNiAyMEMxNiAyMi4yMDkxIDE3Ljc5MDkgMjQgMjAgMjRaIiBmaWxsPSIjRDFENURCIi8+Cjwvc3ZnPgo='
+  style
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(false);
@@ -42,17 +40,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
     return () => observer.disconnect();
   }, []);
 
-  const handleLoad = () => {
-    setIsLoaded(true);
-  };
-
-  const handleError = () => {
-    setHasError(true);
-    console.warn(`Failed to load image: ${src}`);
-  };
-
-  // Clean the src path - no encoding needed with clean folder names
-  const cleanSrc = src.startsWith('/') ? src : `/${src}`;
+  const handleLoad = () => setIsLoaded(true);
+  const handleError = () => setHasError(true);
 
   if (hasError) {
     return (
@@ -68,20 +57,16 @@ const LazyImage: React.FC<LazyImageProps> = ({
 
   return (
     <div className={`relative overflow-hidden ${className}`} style={style}>
-      <img
-        ref={imgRef}
-        src={placeholder}
-        alt=""
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+      {/* Simple placeholder */}
+      <div 
+        className={`absolute inset-0 bg-gray-200 transition-opacity duration-300 ${
           isLoaded ? 'opacity-0' : 'opacity-100'
         }`}
-        width={width}
-        height={height}
-        aria-hidden="true"
+        ref={imgRef}
       />
       {isInView && (
         <img
-          src={cleanSrc}
+          src={src}
           alt={alt}
           className={`w-full h-full object-cover transition-opacity duration-300 ${
             isLoaded ? 'opacity-100' : 'opacity-0'

@@ -17,17 +17,22 @@ export default defineConfig({
         }
       }
     },
-    chunkSizeWarningLimit: 1000,
-    // Ensure public directory assets are copied
-    copyPublicDir: true
+    chunkSizeWarningLimit: 500,
+    copyPublicDir: true,
+    // Enable compression
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
   },
   server: {
     hmr: {
       overlay: false
     }
   },
-  // Ensure public directory is properly handled
   publicDir: 'public',
-  // Add explicit asset handling
   assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.JPG', '**/*.JPEG', '**/*.png', '**/*.PNG', '**/*.webp', '**/*.gif', '**/*.svg']
 });
