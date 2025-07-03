@@ -32,7 +32,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
   const mockPosts: InstagramPost[] = [
     {
       id: '1',
-      media_url: '/images/bridal-showers/20240811_105747.jpg',
+      media_url: '/images/bridal-showers/LandingPage.jpg',
       media_type: 'IMAGE',
       caption: 'Beautiful bridal shower setup for Sarah! 💕 #bridalshower #balloons #randcoevents',
       permalink: 'https://instagram.com/p/example1',

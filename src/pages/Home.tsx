@@ -13,7 +13,7 @@ const Home = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: '/images/bridal-showers/20240811_105747.jpg',
+      src: '/images/bridal-showers/LandingPage.jpg',
       alt: 'Elegant bridal shower balloon arch with romantic pink and gold colors',
       category: 'bridal'
     },
@@ -74,7 +74,7 @@ const Home = () => {
       event: 'Bridal Shower',
       rating: 5,
       text: 'R&Co Events made us feel like family from day one. The luxury balloon decor was absolutely stunning and exceeded all our expectations!',
-      image: '/images/bridal-showers/20240811_105747.jpg'
+      image: '/images/bridal-showers/LandingPage.jpg'
     },
     {
       id: 2,
@@ -100,7 +100,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <LazyImage 
-            src="/images/bridal-showers/20240811_105747.jpg"
+            src="/images/bridal-showers/LandingPage.jpg"
             alt="Luxury balloon decor by R&Co Events - Premium event design in Toronto"
             className="w-full h-full"
             style={{ objectPosition: 'center center' }}
