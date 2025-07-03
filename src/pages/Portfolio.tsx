@@ -5,9 +5,9 @@ import ContactForm from '../components/ContactForm';
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  // Minimal portfolio images - only core essential ones
+  // Reduced portfolio images - only essential ones
   const portfolioImages = [
-    // Baby Showers - 2 images
+    // Baby Showers - reduced to 3
     {
       id: 1,
       src: '/images/baby-showers/IMG_0796.JPEG',
@@ -20,60 +20,90 @@ const Portfolio = () => {
       alt: 'Beautiful baby shower balloon display with elegant styling',
       category: 'baby'
     },
-    // Birthdays - 3 images
     {
       id: 3,
+      src: '/images/baby-showers/20220731_185900.jpg',
+      alt: 'Baby shower balloon decor setup',
+      category: 'baby'
+    },
+    // Birthdays - reduced to 4
+    {
+      id: 4,
       src: '/images/birthdays/IMG_5429.JPG',
       alt: 'Stunning birthday party balloon arch with vibrant colors',
       category: 'birthday'
     },
     {
-      id: 4,
+      id: 5,
       src: '/images/birthdays/IMG_2972.jpg',
       alt: 'Colorful birthday party balloon decoration',
       category: 'birthday'
     },
     {
-      id: 5,
-      src: '/images/birthdays/20210905_143754.jpg',
-      alt: 'Elegant adult birthday balloon display',
+      id: 6,
+      src: '/images/birthdays/IMG_2705.JPG',
+      alt: 'Elegant birthday celebration balloon garland',
       category: 'birthday'
     },
-    // Bridal Showers - 2 images
     {
-      id: 6,
+      id: 7,
+      src: '/images/birthdays/IMG_2939.JPG',
+      alt: 'Vibrant birthday party balloon setup',
+      category: 'birthday'
+    },
+    // Bridal Showers - reduced to 3
+    {
+      id: 8,
+      src: '/images/bridal-showers/LandingPage.jpg',
+      alt: 'Elegant bridal shower balloon arch with romantic pink and gold colors',
+      category: 'bridal'
+    },
+    {
+      id: 9,
       src: '/images/bridal-showers/20220731_130944.jpg',
       alt: 'Elegant bridal shower balloon centerpiece',
       category: 'bridal'
     },
     {
-      id: 7,
+      id: 10,
       src: '/images/bridal-showers/20240811_105747.jpg',
       alt: 'Beautiful bridal shower balloon display with romantic styling',
       category: 'bridal'
     },
-    // Corporate - 2 images
+    // Corporate - reduced to 3
     {
-      id: 8,
+      id: 11,
       src: '/images/corporate/20210721_155342.jpg',
       alt: 'Professional corporate event balloon decor',
       category: 'corporate'
     },
     {
-      id: 9,
+      id: 12,
       src: '/images/corporate/20210816_183032.jpg',
       alt: 'Corporate brand activation balloon display',
       category: 'corporate'
     },
-    // Holidays - 2 images
     {
-      id: 10,
+      id: 13,
+      src: '/images/corporate/IMG_1428.JPEG',
+      alt: 'Corporate event balloon entrance',
+      category: 'corporate'
+    },
+    // Holidays - reduced to 3
+    {
+      id: 14,
+      src: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg',
+      alt: 'Festive holiday party balloon arrangement',
+      category: 'holidays'
+    },
+    {
+      id: 15,
       src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       alt: 'Festive holiday balloon wall decoration',
       category: 'holidays'
     },
     {
-      id: 11,
+      id: 16,
       src: '/images/holidays/20210511_193336.jpg',
       alt: 'Beautiful holiday balloon installation with elegant styling',
       category: 'holidays'
