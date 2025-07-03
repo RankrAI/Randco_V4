@@ -19,9 +19,9 @@ function scanDirectory(dir, images = []) {
       scanDirectory(fullPath, images);
     } else if (imageExtensions.includes(path.extname(item).toLowerCase())) {
       // Found an image file
-      const relativePath = path.relative('public', fullPath);
+      const relativePath = path.relative('images', fullPath);
       images.push({
-        path: `/${relativePath.replace(/\\/g, '/')}`, // Ensure forward slashes
+        path: `/images/${relativePath.replace(/\\/g, '/')}`, // Ensure forward slashes
         name: item,
         size: stat.size,
         category: path.dirname(relativePath).replace(/\\/g, '/'),
@@ -33,9 +33,9 @@ function scanDirectory(dir, images = []) {
   return images;
 }
 
-// Scan the public directory
-const publicDir = path.join(__dirname, '../public');
-const images = scanDirectory(publicDir);
+// Scan the images directory
+const imagesDir = path.join(__dirname, '../images');
+const images = scanDirectory(imagesDir);
 
 const manifest = {
   images,
@@ -46,7 +46,7 @@ const manifest = {
 };
 
 // Before writing the file, ensure the directory exists
-const outputPath = path.join(__dirname, '../public/image-manifest.json');
+const outputPath = path.join(__dirname, '../images/image-manifest.json');
 const outputDir = path.dirname(outputPath);
 
 if (!fs.existsSync(outputDir)) {

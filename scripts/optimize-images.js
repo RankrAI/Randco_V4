@@ -11,7 +11,7 @@ const optimizeImages = () => {
   console.log('🖼️  Image Optimization Report');
   console.log('================================');
   
-  const publicDir = path.join(__dirname, '../public');
+  const imagesDir = path.join(__dirname, '../images');
   const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
   
   const scanDirectory = (dir, basePath = '') => {
@@ -39,8 +39,8 @@ const optimizeImages = () => {
     return { size: totalSize, count: imageCount };
   };
   
-  if (fs.existsSync(publicDir)) {
-    const result = scanDirectory(publicDir);
+  if (fs.existsSync(imagesDir)) {
+    const result = scanDirectory(imagesDir);
     const totalMB = Math.round(result.size / (1024 * 1024) * 100) / 100;
     
     console.log('================================');
@@ -56,7 +56,7 @@ const optimizeImages = () => {
     console.log('4. Use lazy loading (already implemented)');
     console.log('5. Consider CDN hosting for faster delivery');
   } else {
-    console.log('❌ Public directory not found');
+    console.log('❌ Images directory not found');
   }
 };
 

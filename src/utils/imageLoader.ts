@@ -7,52 +7,52 @@ interface ImageInfo {
 
 // Known images with actual folder names that exist
 const KNOWN_IMAGES: ImageInfo[] = [
-  // Baby Showers (renamed to baby-showers)
-  { path: '/baby-showers/IMG_0796.JPEG', name: 'IMG_0796.JPEG', category: 'baby-showers' },
-  { path: '/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', category: 'baby-showers' },
-  { path: '/baby-showers/20221015_175734.jpg', name: '20221015_175734.jpg', category: 'baby-showers' },
-  { path: '/baby-showers/20220731_185900.jpg', name: '20220731_185900.jpg', category: 'baby-showers' },
-  { path: '/baby-showers/BabyShower.jpg', name: 'BabyShower.jpg', category: 'baby-showers' },
+  // Baby Showers
+  { path: '/images/baby-showers/IMG_0796.JPEG', name: 'IMG_0796.JPEG', category: 'baby-showers' },
+  { path: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/20221015_175734.jpg', name: '20221015_175734.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/20220731_185900.jpg', name: '20220731_185900.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/BabyShower.jpg', name: 'BabyShower.jpg', category: 'baby-showers' },
   
-  // Birthdays (fixed to match lowercase folder name)
-  { path: '/birthdays/IMG_5429.JPG', name: 'IMG_5429.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2972.jpg', name: 'IMG_2972.jpg', category: 'birthdays' },
-  { path: '/birthdays/IMG_2705.JPG', name: 'IMG_2705.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2939.JPG', name: 'IMG_2939.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2862.JPG', name: 'IMG_2862.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2854.JPG', name: 'IMG_2854.JPG', category: 'birthdays' },
-  { path: '/birthdays/20210905_143754.jpg', name: '20210905_143754.jpg', category: 'birthdays' },
-  { path: '/birthdays/IMG_4644.JPG', name: 'IMG_4644.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2583.JPG', name: 'IMG_2583.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2669.JPG', name: 'IMG_2669.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2710.JPG', name: 'IMG_2710.JPG', category: 'birthdays' },
-  { path: '/birthdays/IMG_2908.JPG', name: 'IMG_2908.JPG', category: 'birthdays' },
-  { path: '/birthdays/20231103_171244.jpg', name: '20231103_171244.jpg', category: 'birthdays' },
+  // Birthdays
+  { path: '/images/birthdays/IMG_5429.JPG', name: 'IMG_5429.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2972.jpg', name: 'IMG_2972.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2705.JPG', name: 'IMG_2705.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2939.JPG', name: 'IMG_2939.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2862.JPG', name: 'IMG_2862.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2854.JPG', name: 'IMG_2854.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/20210905_143754.jpg', name: '20210905_143754.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_4644.JPG', name: 'IMG_4644.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2583.JPG', name: 'IMG_2583.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2669.JPG', name: 'IMG_2669.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2710.JPG', name: 'IMG_2710.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2908.JPG', name: 'IMG_2908.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/20231103_171244.jpg', name: '20231103_171244.jpg', category: 'birthdays' },
   
-  // Bridal Showers (renamed to bridal-showers)
-  { path: '/bridal-showers/LandingPage.jpg', name: 'LandingPage.jpg', category: 'bridal-showers' },
-  { path: '/bridal-showers/20220731_130944.jpg', name: '20220731_130944.jpg', category: 'bridal-showers' },
-  { path: '/bridal-showers/20240811_105747.jpg', name: '20240811_105747.jpg', category: 'bridal-showers' },
-  { path: '/bridal-showers/DSC_2863.jpg', name: 'DSC_2863.jpg', category: 'bridal-showers' },
+  // Bridal Showers
+  { path: '/images/bridal-showers/LandingPage.jpg', name: 'LandingPage.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/20220731_130944.jpg', name: '20220731_130944.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/20240811_105747.jpg', name: '20240811_105747.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/DSC_2863.jpg', name: 'DSC_2863.jpg', category: 'bridal-showers' },
   
-  // Corporate (fixed to match lowercase folder name)
-  { path: '/corporate/20210721_155342.jpg', name: '20210721_155342.jpg', category: 'corporate' },
-  { path: '/corporate/20210816_183032.jpg', name: '20210816_183032.jpg', category: 'corporate' },
-  { path: '/corporate/IMG_1428.JPEG', name: 'IMG_1428.JPEG', category: 'corporate' },
-  { path: '/corporate/IMG_2609.JPG', name: 'IMG_2609.JPG', category: 'corporate' },
-  { path: '/corporate/EIVQ6040.JPG', name: 'EIVQ6040.JPG', category: 'corporate' },
-  { path: '/corporate/20240617_192834.jpg', name: '20240617_192834.jpg', category: 'corporate' },
-  { path: '/corporate/20210512_115014.jpg', name: '20210512_115014.jpg', category: 'corporate' },
+  // Corporate
+  { path: '/images/corporate/20210721_155342.jpg', name: '20210721_155342.jpg', category: 'corporate' },
+  { path: '/images/corporate/20210816_183032.jpg', name: '20210816_183032.jpg', category: 'corporate' },
+  { path: '/images/corporate/IMG_1428.JPEG', name: 'IMG_1428.JPEG', category: 'corporate' },
+  { path: '/images/corporate/IMG_2609.JPG', name: 'IMG_2609.JPG', category: 'corporate' },
+  { path: '/images/corporate/EIVQ6040.JPG', name: 'EIVQ6040.JPG', category: 'corporate' },
+  { path: '/images/corporate/20240617_192834.jpg', name: '20240617_192834.jpg', category: 'corporate' },
+  { path: '/images/corporate/20210512_115014.jpg', name: '20210512_115014.jpg', category: 'corporate' },
   
-  // Holidays (fixed to match lowercase folder name)
-  { path: '/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', name: '49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', category: 'holidays' },
-  { path: '/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', name: '339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', category: 'holidays' },
-  { path: '/holidays/IMG_0232.JPEG', name: 'IMG_0232.JPEG', category: 'holidays' },
-  { path: '/holidays/20210511_193336.jpg', name: '20210511_193336.jpg', category: 'holidays' },
-  { path: '/holidays/20210509_113246.jpg', name: '20210509_113246.jpg', category: 'holidays' },
+  // Holidays
+  { path: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', name: '49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', category: 'holidays' },
+  { path: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', name: '339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', category: 'holidays' },
+  { path: '/images/holidays/IMG_0232.JPEG', name: 'IMG_0232.JPEG', category: 'holidays' },
+  { path: '/images/holidays/20210511_193336.jpg', name: '20210511_193336.jpg', category: 'holidays' },
+  { path: '/images/holidays/20210509_113246.jpg', name: '20210509_113246.jpg', category: 'holidays' },
   
   // Logo
-  { path: '/Logo_Simple.png', name: 'Logo_Simple.png', category: 'Logo' }
+  { path: '/images/Logo_Simple.png', name: 'Logo_Simple.png', category: 'Logo' }
 ];
 
 // Helper function to get clean image URL

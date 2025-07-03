@@ -44,7 +44,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/Logo_Simple.png" 
+              src="/images/Logo_Simple.png" 
               alt="R&Co Events - Luxury Balloon Decor Toronto" 
               className="h-12 w-auto"
               width="48"
