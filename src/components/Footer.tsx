@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/Logo_Simple.png" 
+              src="/images/Logo_Simple.png" 
               alt="R&Co Events - Luxury Balloon Decor Toronto" 
               className="h-16 w-auto filter brightness-0 invert"
               width="64"
