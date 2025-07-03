@@ -18,13 +18,13 @@ const Home = () => {
     },
     {
       id: 2,
-      src: '/images/Corporate/20210721_155342.jpg',
+      src: '/images/corporate/20210721_155342.jpg',
       alt: 'Professional corporate event balloon decor installation',
       category: 'corporate'
     },
     {
       id: 3,
-      src: '/images/Birthdays/IMG_5429.JPG',
+      src: '/images/birthdays/IMG_5429.JPG',
       alt: 'Spectacular birthday celebration balloon display',
       category: 'birthday'
     },
@@ -36,13 +36,13 @@ const Home = () => {
     },
     {
       id: 5,
-      src: '/images/Holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
+      src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       alt: 'Festive holiday party balloon wall decoration',
       category: 'holiday'
     },
     {
       id: 6,
-      src: '/images/Birthdays/IMG_2705.JPG',
+      src: '/images/birthdays/IMG_2705.JPG',
       alt: 'Elegant birthday celebration balloon garland',
       category: 'birthday'
     }
@@ -63,7 +63,7 @@ const Home = () => {
       event: 'Corporate Gala',
       rating: 5,
       text: 'The premium quality and attention to detail was exceptional. Our corporate gala was elevated beyond expectations with their sophisticated designs.',
-      image: '/images/Corporate/20210721_155342.jpg'
+      image: '/images/corporate/20210721_155342.jpg'
     },
     {
       id: 3,

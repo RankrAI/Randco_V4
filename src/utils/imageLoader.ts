@@ -20,14 +20,12 @@ const KNOWN_IMAGES: ImageInfo[] = [
   { path: '/images/birthdays/IMG_2705.JPG', name: 'IMG_2705.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2939.JPG', name: 'IMG_2939.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2862.JPG', name: 'IMG_2862.JPG', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2854.JPG', name: 'IMG_2854.JPG', category: 'birthdays' },
   { path: '/images/birthdays/20210905_143754.jpg', name: '20210905_143754.jpg', category: 'birthdays' },
   { path: '/images/birthdays/IMG_4644.JPG', name: 'IMG_4644.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2583.JPG', name: 'IMG_2583.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2669.JPG', name: 'IMG_2669.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2710.JPG', name: 'IMG_2710.JPG', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2908.JPG', name: 'IMG_2908.JPG', category: 'birthdays' },
-  { path: '/images/birthdays/20231103_171244.jpg', name: '20231103_171244.jpg', category: 'birthdays' },
   
   // Bridal Showers
   { path: '/images/bridal-showers/LandingPage.jpg', name: 'LandingPage.jpg', category: 'bridal-showers' },
