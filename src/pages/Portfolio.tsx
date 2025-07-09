@@ -16,7 +16,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: '/images/baby-showers/20221015_175737 (1).webp',
+      src: '/images/baby-showers/20221015_175734.webp',
       alt: 'Over the moon baby shower balloon display',
       category: 'baby'
     },
