@@ -35,6 +35,30 @@ const Corporate = () => {
       src: '/images/corporate/20240617_192834.webp',
       alt: 'Corporate gala balloon setup',
       category: 'gala'
+    },
+    {
+      id: 6,
+      src: '/images/corporate/20210512_115014.webp',
+      alt: 'Corporate event balloon entrance decor',
+      category: 'entrance'
+    },
+    {
+      id: 7,
+      src: '/images/corporate/IMG_1431.webp',
+      alt: 'Corporate conference balloon backdrop',
+      category: 'conference'
+    },
+    {
+      id: 8,
+      src: '/images/corporate/IMG_2609.webp',
+      alt: 'Corporate networking event balloon decor',
+      category: 'networking'
+    },
+    {
+      id: 9,
+      src: '/images/corporate/20220731_130944.webp',
+      alt: 'Professional corporate balloon display',
+      category: 'professional'
     }
   ];
 

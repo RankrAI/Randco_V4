@@ -20,15 +20,15 @@ const BabyShowers = () => {
     },
     {
       id: 3,
-      src: '/images/baby-showers/20221015_175734.webp',
-      alt: 'Elegant baby shower balloon arrangement',
-      category: 'arrangement'
-    },
-    {
-      id: 4,
       src: '/images/baby-showers/20220731_185900.webp',
       alt: 'Baby shower balloon decor setup',
       category: 'decor'
+    },
+    {
+      id: 4,
+      src: '/images/baby-showers/20221015_175734.webp',
+      alt: 'Elegant baby shower balloon arrangement',
+      category: 'arrangement'
     },
     {
       id: 5,

@@ -39,9 +39,27 @@ const Birthdays = () => {
     },
     {
       id: 6,
-      src: '/images/birthdays/20210905_143754.webp',
-      alt: 'Elegant adult birthday balloon display',
-      category: 'elegant'
+      src: '/images/birthdays/20231103_171244.webp',
+      alt: 'Sophisticated birthday celebration balloon decor',
+      category: 'adult'
+    },
+    {
+      id: 7,
+      src: '/images/birthdays/IMG_2862.webp',
+      alt: 'Colorful birthday party balloon setup',
+      category: 'children'
+    },
+    {
+      id: 8,
+      src: '/images/birthdays/IMG_4642.webp',
+      alt: 'Grand birthday celebration balloon display',
+      category: 'milestone'
+    },
+    {
+      id: 9,
+      src: '/images/birthdays/IMG_2735.webp',
+      alt: 'Elegant birthday balloon arrangement',
+      category: 'adult'
     }
   ];
 

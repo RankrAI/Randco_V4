@@ -36,6 +36,12 @@ const Holidays = () => {
       src: '/images/holidays/IMG_0232.webp',
       alt: 'Holiday celebration balloon display',
       category: 'display'
+    },
+    {
+      id: 6,
+      src: '/images/holidays/IMG_6725.webp',
+      alt: 'Festive holiday balloon arrangement',
+      category: 'festive'
     }
   ];
 

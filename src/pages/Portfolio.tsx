@@ -10,14 +10,14 @@ const Portfolio = () => {
     // Baby Showers
     {
       id: 1,
-      src: '/images/baby-showers/20220731_185900.webp',
-      alt: 'Baby shower balloon decor setup',
+      src: '/images/baby-showers/20221015_175734.webp',
+      alt: 'Elegant baby shower balloon arrangement',
       category: 'baby'
     },
     {
       id: 2,
-      src: '/images/baby-showers/20221015_175734.webp',
-      alt: 'Elegant baby shower balloon arrangement',
+      src: '/images/baby-showers/20220731_185900.webp',
+      alt: 'Baby shower balloon decor setup',
       category: 'baby'
     },
     {
@@ -136,6 +136,120 @@ const Portfolio = () => {
       alt: 'Stunning birthday party balloon arch with vibrant colors',
       category: 'birthday'
     },
+    {
+      id: 35,
+      src: '/images/birthdays/20231103_171244.webp',
+      alt: 'Elegant birthday celebration with sophisticated balloon decor',
+      category: 'birthday'
+    },
+    {
+      id: 36,
+      src: '/images/birthdays/20250519_160613.webp',
+      alt: 'Modern birthday party balloon installation',
+      category: 'birthday'
+    },
+    {
+      id: 37,
+      src: '/images/birthdays/38CE3FD0-E73C-4455-84DD-177AD3C1B0A2.webp',
+      alt: 'Colorful birthday celebration balloon setup',
+      category: 'birthday'
+    },
+    {
+      id: 38,
+      src: '/images/birthdays/F78A3C15-B69F-4E7A-A6FF-B2A671A82497.webp',
+      alt: 'Birthday party balloon arrangement with vibrant colors',
+      category: 'birthday'
+    },
+    {
+      id: 39,
+      src: '/images/birthdays/IMG_2192.webp',
+      alt: 'Professional birthday balloon display',
+      category: 'birthday'
+    },
+    {
+      id: 40,
+      src: '/images/birthdays/IMG_2243.webp',
+      alt: 'Birthday celebration balloon centerpiece',
+      category: 'birthday'
+    },
+    {
+      id: 41,
+      src: '/images/birthdays/IMG_2255.webp',
+      alt: 'Elegant birthday balloon garland',
+      category: 'birthday'
+    },
+    {
+      id: 42,
+      src: '/images/birthdays/IMG_2339.webp',
+      alt: 'Birthday party balloon backdrop',
+      category: 'birthday'
+    },
+    {
+      id: 43,
+      src: '/images/birthdays/IMG_2353.webp',
+      alt: 'Colorful birthday balloon installation',
+      category: 'birthday'
+    },
+    {
+      id: 44,
+      src: '/images/birthdays/IMG_2583.webp',
+      alt: 'Birthday celebration balloon decor',
+      category: 'birthday'
+    },
+    {
+      id: 45,
+      src: '/images/birthdays/IMG_2669.webp',
+      alt: 'Professional birthday balloon setup',
+      category: 'birthday'
+    },
+    {
+      id: 46,
+      src: '/images/birthdays/IMG_2710.webp',
+      alt: 'Birthday party balloon arrangement',
+      category: 'birthday'
+    },
+    {
+      id: 47,
+      src: '/images/birthdays/IMG_2735.webp',
+      alt: 'Elegant birthday balloon display',
+      category: 'birthday'
+    },
+    {
+      id: 48,
+      src: '/images/birthdays/IMG_2854.webp',
+      alt: 'Birthday celebration balloon centerpiece',
+      category: 'birthday'
+    },
+    {
+      id: 49,
+      src: '/images/birthdays/IMG_2862.webp',
+      alt: 'Colorful birthday balloon setup',
+      category: 'birthday'
+    },
+    {
+      id: 50,
+      src: '/images/birthdays/IMG_2908.webp',
+      alt: 'Birthday party balloon installation',
+      category: 'birthday'
+    },
+    {
+      id: 51,
+      src: '/images/birthdays/IMG_4642.webp',
+      alt: 'Grand birthday celebration balloon display',
+      category: 'birthday'
+    },
+    {
+      id: 52,
+      src: '/images/birthdays/IMG_4644.webp',
+      alt: 'Spectacular birthday balloon arrangement',
+      category: 'birthday'
+    },
+    {
+      id: 53,
+      src: '/images/birthdays/D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.webp',
+      alt: 'Birthday party balloon decoration',
+      category: 'birthday'
+    },
 
     // Bridal Showers
     {
@@ -188,6 +302,30 @@ const Portfolio = () => {
       alt: 'Corporate gala balloon setup',
       category: 'corporate'
     },
+    {
+      id: 54,
+      src: '/images/corporate/20210512_115014.webp',
+      alt: 'Corporate event balloon entrance decor',
+      category: 'corporate'
+    },
+    {
+      id: 55,
+      src: '/images/corporate/20220731_130944.webp',
+      alt: 'Professional corporate balloon display',
+      category: 'corporate'
+    },
+    {
+      id: 56,
+      src: '/images/corporate/IMG_1431.webp',
+      alt: 'Corporate conference balloon backdrop',
+      category: 'corporate'
+    },
+    {
+      id: 57,
+      src: '/images/corporate/IMG_2609.webp',
+      alt: 'Corporate networking event balloon decor',
+      category: 'corporate'
+    },
 
     // Holidays
     {
@@ -218,6 +356,12 @@ const Portfolio = () => {
       id: 34,
       src: '/images/holidays/IMG_0232.webp',
       alt: 'Holiday celebration balloon display',
+      category: 'holidays'
+    },
+    {
+      id: 58,
+      src: '/images/holidays/IMG_6725.webp',
+      alt: 'Festive holiday balloon arrangement',
       category: 'holidays'
     }
   ];

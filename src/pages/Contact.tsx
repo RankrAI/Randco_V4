@@ -133,20 +133,31 @@ const Contact = () => {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             {/* Interactive Google Map */}
             <div className="relative">
-              <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyAuHbjfgJODCtZiixWc_RKCqhHgz8W3o0g&q=Greater+Toronto+Area,ON,Canada&zoom=10&maptype=roadmap`}
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="R&Co Events Service Area - Greater Toronto Area"
-                className="w-full"
-              />
+              <div className="w-full h-96 bg-gradient-to-br from-gold-100 to-cream-100 flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin className="h-16 w-16 text-gold-600 mx-auto mb-4" />
+                  <h3 className="font-serif text-2xl font-semibold text-charcoal-900 mb-2">
+                    Greater Toronto Area
+                  </h3>
+                  <p className="font-sans text-charcoal-600 max-w-md">
+                    We proudly serve Toronto, Mississauga, Brampton, Markham, Richmond Hill, Vaughan, Oakville, Burlington, and surrounding communities.
+                  </p>
+                  <div className="mt-6">
+                    <a 
+                      href="https://www.google.com/maps/search/Greater+Toronto+Area,+ON,+Canada"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-gold-600 text-white px-6 py-3 rounded-full font-sans font-semibold hover:bg-gold-700 transition-colors duration-200"
+                    >
+                      <MapPin className="h-4 w-4 mr-2" />
+                      View on Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
               
               {/* Map Overlay with Service Info */}
-              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs">
+              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs hidden md:block">
                 <div className="flex items-center mb-2">
                   <MapPin className="h-5 w-5 text-gold-600 mr-2" />
                   <h3 className="font-serif font-semibold text-charcoal-900">Service Coverage</h3>
