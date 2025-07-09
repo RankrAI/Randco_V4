@@ -65,13 +65,14 @@ const Header = () => {
                           ? 'text-gold-600'
                           : 'text-charcoal-800 hover:text-gold-600'
                       }`}
-                      onMouseEnter={() => setIsServicesOpen(true)}
                     >
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </Link>
                     <div 
-                      className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                      className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl py-2 z-50 transition-all duration-200 ${
+                        isServicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'
+                      }`}
                       onMouseEnter={() => setIsServicesOpen(true)}
                       onMouseLeave={() => setIsServicesOpen(false)}
                     >
@@ -80,6 +81,7 @@ const Header = () => {
                           key={subItem.name}
                           to={subItem.href}
                           className="block px-4 py-2 text-charcoal-700 hover:bg-gold-50 hover:text-gold-600 transition-colors duration-200"
+                          onClick={() => setIsServicesOpen(false)}
                         >
                           {subItem.name}
                         </Link>
