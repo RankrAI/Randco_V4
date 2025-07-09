@@ -42,7 +42,7 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/birthdays/IMG_2669.webp', name: 'IMG_2669.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2705.webp', name: 'IMG_2705.webp', category: 'birthdays', rotation: 90 },
   { path: '/images/birthdays/IMG_2710.webp', name: 'IMG_2710.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2735.webp', name: 'IMG_2735.webp', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2735.webp', name: 'IMG_2735.webp', category: 'birthdays', rotation: 180 },
   { path: '/images/birthdays/IMG_2854.webp', name: 'IMG_2854.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2862.webp', name: 'IMG_2862.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2908.webp', name: 'IMG_2908.webp', category: 'birthdays' },
