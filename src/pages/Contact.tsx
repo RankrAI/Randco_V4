@@ -1,4 +1,3 @@
-import React from 'react';
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 

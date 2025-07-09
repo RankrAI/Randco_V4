@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heart, Award, Users, Sparkles } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import InstagramFeed from '../components/InstagramFeed';

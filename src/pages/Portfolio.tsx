@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Gallery from '../components/Gallery';
 import ContactForm from '../components/ContactForm';
 

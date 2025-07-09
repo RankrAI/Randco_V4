@@ -1,5 +1,4 @@
-import React from 'react';
-import { Building, Target, Users, ArrowRight, Star, Crown, ShoppingBag, Heart } from 'lucide-react';
+import { Building, Target, Users, ArrowRight, Star, ShoppingBag, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Gallery from '../../components/Gallery';
 import ContactForm from '../../components/ContactForm';

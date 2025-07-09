@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Heart, Building, Gift, Users, Baby, TreePine } from 'lucide-react';
+import { ArrowRight, Heart, Building, Gift, Baby, TreePine } from 'lucide-react';
 
 const Services = () => {
   const services = [

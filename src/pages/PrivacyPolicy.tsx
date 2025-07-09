@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Mail, Phone, FileText } from 'lucide-react';
 
 const PrivacyPolicy = () => {

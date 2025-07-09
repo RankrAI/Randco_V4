@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, ArrowRight, Instagram, Heart, Sparkles } from 'lucide-react';
 import LazyImage from '../components/LazyImage';

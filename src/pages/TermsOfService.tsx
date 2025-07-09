@@ -1,4 +1,3 @@
-import React from 'react';
 import { FileText, Mail, Phone, Scale } from 'lucide-react';
 
 const TermsOfService = () => {

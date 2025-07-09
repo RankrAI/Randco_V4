@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Instagram, ExternalLink } from 'lucide-react';
 import LazyImage from './LazyImage';
 

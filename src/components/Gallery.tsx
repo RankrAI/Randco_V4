@@ -1,5 +1,4 @@
-import React, { useState, lazy, Suspense } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, lazy, Suspense } from 'react';
 import LazyImage from './LazyImage';
 
 const Lightbox = lazy(() => import('./Lightbox'));

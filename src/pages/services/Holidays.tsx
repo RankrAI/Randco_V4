@@ -1,4 +1,3 @@
-import React from 'react';
 import { TreePine, Sparkles, Heart, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Gallery from '../../components/Gallery';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Gift, Cake, Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Gallery from '../../components/Gallery';
