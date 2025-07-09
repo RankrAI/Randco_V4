@@ -49,10 +49,10 @@ const LazyImage: React.FC<LazyImageProps> = ({
   const rotation = imageInfo?.rotation || 0;
   
   // Apply rotation style if needed
-  const imageStyle = rotation ? { 
-    transform: `rotate(${rotation}deg)`,
-    ...style 
-  } : style;
+  const imageStyle = {
+    ...(rotation ? { transform: `rotate(${rotation}deg)` } : {}),
+    ...style
+  };
 
   if (hasError) {
     return (
