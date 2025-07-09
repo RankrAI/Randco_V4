@@ -13,55 +13,55 @@ const Home = () => {
   const portfolioImages = [
     {
       id: 1,
-      src: '/images/bridal-showers/LandingPage.webp',
+      src: '/images/bridal-showers/LandingPage.jpg',
       alt: 'Elegant bridal shower balloon arch with romantic pink and gold colors',
       category: 'bridal'
     },
     {
       id: 2,
-      src: '/images/corporate/20210721_155342.webp',
+      src: '/images/corporate/20210721_155342.jpg',
       alt: 'Professional corporate event balloon decor installation',
       category: 'corporate'
     },
     {
       id: 3,
-      src: '/images/birthdays/IMG_5429.webp',
+      src: '/images/birthdays/IMG_5429.JPG',
       alt: 'Spectacular birthday celebration balloon display',
       category: 'birthday'
     },
     {
       id: 4,
-      src: '/images/baby-showers/IMG_0796.webp',
+      src: '/images/baby-showers/IMG_0796.JPEG',
       alt: 'Sweet baby shower balloon centerpiece with pastel colors',
       category: 'baby'
     },
     {
       id: 5,
-      src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp',
+      src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       alt: 'Festive holiday party balloon wall decoration',
       category: 'holiday'
     },
     {
       id: 6,
-      src: '/images/birthdays/IMG_2705.webp',
+      src: '/images/birthdays/IMG_2705.JPG',
       alt: 'Elegant birthday celebration balloon garland',
       category: 'birthday'
     },
     {
       id: 7,
-      src: '/images/bridal-showers/DSC_2863.webp',
+      src: '/images/bridal-showers/DSC_2863.jpg',
       alt: 'Elegant bridal shower welcome display',
       category: 'bridal'
     },
     {
       id: 8,
-      src: '/images/corporate/EIVQ6040.webp',
+      src: '/images/corporate/EIVQ6040.JPG',
       alt: 'Corporate networking event balloon decoration',
       category: 'corporate'
     },
     {
       id: 9,
-      src: '/images/birthdays/IMG_2939.webp',
+      src: '/images/birthdays/IMG_2939.JPG',
       alt: 'Stunning birthday celebration balloon installation',
       category: 'birthday'
     }
@@ -74,7 +74,7 @@ const Home = () => {
       event: 'Bridal Shower',
       rating: 5,
       text: 'R&Co Events made us feel like family from day one. The luxury balloon decor was absolutely stunning and exceeded all our expectations!',
-      image: '/images/bridal-showers/LandingPage.webp'
+      image: '/images/bridal-showers/LandingPage.jpg'
     },
     {
       id: 2,
@@ -82,7 +82,7 @@ const Home = () => {
       event: 'Corporate Gala',
       rating: 5,
       text: 'The premium quality and attention to detail was exceptional. Our corporate gala was elevated beyond expectations with their sophisticated designs.',
-      image: '/images/corporate/20210721_155342.webp'
+      image: '/images/corporate/20210721_155342.jpg'
     },
     {
       id: 3,
@@ -90,7 +90,7 @@ const Home = () => {
       event: 'Baby Shower',
       rating: 5,
       text: 'From concept to execution, R&Co Events delivered pure magic. The luxury balloon decor created the perfect atmosphere for our celebration.',
-      image: '/images/baby-showers/IMG_0796.webp'
+      image: '/images/baby-showers/IMG_0796.JPEG'
     }
   ];
 
@@ -100,7 +100,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden hero-section">
         <div className="absolute inset-0">
           <img 
-            src="/images/bridal-showers/LandingPage.webp"
+            src="/images/bridal-showers/LandingPage.jpg"
             alt="Luxury balloon decor by R&Co Events - Premium event design in Toronto"
             className="w-full h-full object-cover img-optimized"
             style={{ objectPosition: 'center center' }}

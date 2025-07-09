@@ -32,7 +32,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
   const mockPosts: InstagramPost[] = [
     {
       id: '1',
-      media_url: '/images/bridal-showers/LandingPage.webp',
+      media_url: '/images/bridal-showers/LandingPage.jpg',
       media_type: 'IMAGE',
       caption: 'Beautiful bridal shower setup for Sarah! 💕 #bridalshower #balloons #randcoevents',
       permalink: 'https://instagram.com/p/example1',
@@ -40,7 +40,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '2',
-      media_url: '/images/corporate/20210721_155342.webp',
+      media_url: '/images/corporate/20210721_155342.jpg',
       media_type: 'IMAGE',
       caption: 'Corporate event magic ✨ #corporate #events #balloonart',
       permalink: 'https://instagram.com/p/example2',
@@ -48,7 +48,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '3',
-      media_url: '/images/baby-showers/IMG_0796.webp',
+      media_url: '/images/baby-showers/IMG_0796.JPEG',
       media_type: 'IMAGE',
       caption: 'Sweet baby shower vibes 👶 #babyshower #balloons #toronto',
       permalink: 'https://instagram.com/p/example3',
@@ -56,7 +56,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '4',
-      media_url: '/images/birthdays/IMG_2972.webp',
+      media_url: '/images/birthdays/IMG_2972.jpg',
       media_type: 'IMAGE',
       caption: 'Birthday party perfection! 🎉 #birthday #celebration #ballooninstallation',
       permalink: 'https://instagram.com/p/example4',
@@ -64,7 +64,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '5',
-      media_url: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp',
+      media_url: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       media_type: 'IMAGE',
       caption: 'Holiday celebration magic ✨ #holidays #balloons #luxury',
       permalink: 'https://instagram.com/p/example5',
@@ -72,7 +72,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '6',
-      media_url: '/images/birthdays/IMG_2705.webp',
+      media_url: '/images/birthdays/IMG_2705.JPG',
       media_type: 'IMAGE',
       caption: 'Behind the scenes magic 🎈 #bts #balloonart #randcoevents',
       permalink: 'https://instagram.com/p/example6',
@@ -80,7 +80,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '7',
-      media_url: '/images/corporate/20210816_183032.webp',
+      media_url: '/images/corporate/20210816_183032.jpg',
       media_type: 'IMAGE',
       caption: 'Corporate gala elegance! 💼✨ #corporateevents #balloons #toronto',
       permalink: 'https://instagram.com/p/example7',
@@ -88,7 +88,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({
     },
     {
       id: '8',
-      media_url: '/images/birthdays/IMG_2939.webp',
+      media_url: '/images/birthdays/IMG_2939.JPG',
       media_type: 'IMAGE',
       caption: 'Stunning birthday celebration 🌟 #birthday #balloons #events',
       permalink: 'https://instagram.com/p/example8',

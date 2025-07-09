@@ -1,4 +1,4 @@
-// Full image loader with WebP images and rotation data
+// Full image loader with original image formats that exist in public/images/
 interface ImageInfo {
   path: string;
   name: string;
@@ -6,76 +6,61 @@ interface ImageInfo {
   rotation?: number; // degrees to rotate if needed
 }
 
-// All verified existing WebP images from the file system with rotation data
+// All verified existing images from the public/images directory
 const ALL_IMAGES: ImageInfo[] = [
-  // Baby Showers - converted to WebP
-  { path: '/images/baby-showers/20220731_185900.webp', name: '20220731_185900.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/20221015_175734.webp', name: '20221015_175734.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/BabyShower.webp', name: 'BabyShower.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/IMG_0796.webp', name: 'IMG_0796.webp', category: 'baby-showers' },
+  // Baby Showers - verified existing in public/images/
+  { path: '/images/baby-showers/20220731_185900.jpg', name: '20220731_185900.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/20221015_175734.jpg', name: '20221015_175734.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/BabyShower.jpg', name: 'BabyShower.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', category: 'baby-showers' },
+  { path: '/images/baby-showers/IMG_0796.JPEG', name: 'IMG_0796.JPEG', category: 'baby-showers' },
 
-  // Birthdays - converted to WebP
-  { path: '/images/birthdays/0D617243-2B95-4F80-876D-148EF5266664.webp', name: '0D617243-2B95-4F80-876D-148EF5266664.webp', category: 'birthdays' },
-  { path: '/images/birthdays/20210905_143754.webp', name: '20210905_143754.webp', category: 'birthdays' },
-  { path: '/images/birthdays/20231103_171244.webp', name: '20231103_171244.webp', category: 'birthdays' },
-  { path: '/images/birthdays/20250519_160529.webp', name: '20250519_160529.webp', category: 'birthdays' },
-  { path: '/images/birthdays/20250519_160613.webp', name: '20250519_160613.webp', category: 'birthdays' },
-  { path: '/images/birthdays/38CE3FD0-E73C-4455-84DD-177AD3C1B0A2.webp', name: '38CE3FD0-E73C-4455-84DD-177AD3C1B0A2.webp', category: 'birthdays' },
-  { path: '/images/birthdays/4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.webp', name: '4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.webp', category: 'birthdays' },
-  { path: '/images/birthdays/4E4B437F-48E3-4169-9335-C8A235E90DD8.webp', name: '4E4B437F-48E3-4169-9335-C8A235E90DD8.webp', category: 'birthdays' },
-  { path: '/images/birthdays/4E67466A-2F9A-4BEF-8275-59611D0D6679.webp', name: '4E67466A-2F9A-4BEF-8275-59611D0D6679.webp', category: 'birthdays' },
-  { path: '/images/birthdays/77E0D959-4DDB-4D6C-89FB-8D65667C40F1.webp', name: '77E0D959-4DDB-4D6C-89FB-8D65667C40F1.webp', category: 'birthdays' },
-  { path: '/images/birthdays/8BAEF93C-FA38-4525-AC5C-2AB46D1CF355.webp', name: '8BAEF93C-FA38-4525-AC5C-2AB46D1CF355.webp', category: 'birthdays' },
-  { path: '/images/birthdays/9E3BD036-9995-4285-885A-76C705C38329.webp', name: '9E3BD036-9995-4285-885A-76C705C38329.webp', category: 'birthdays' },
-  { path: '/images/birthdays/AJYE6187.webp', name: 'AJYE6187.webp', category: 'birthdays' },
-  { path: '/images/birthdays/D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.webp', name: 'D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.webp', category: 'birthdays' },
-  { path: '/images/birthdays/F78A3C15-B69F-4E7A-A6FF-B2A671A82497.webp', name: 'F78A3C15-B69F-4E7A-A6FF-B2A671A82497.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_0259.webp', name: 'IMG_0259.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_1326.webp', name: 'IMG_1326.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2192.webp', name: 'IMG_2192.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2243.webp', name: 'IMG_2243.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2255.webp', name: 'IMG_2255.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2339.webp', name: 'IMG_2339.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2353.webp', name: 'IMG_2353.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2583.webp', name: 'IMG_2583.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2669.webp', name: 'IMG_2669.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2705.webp', name: 'IMG_2705.webp', category: 'birthdays', rotation: 90 },
-  { path: '/images/birthdays/IMG_2710.webp', name: 'IMG_2710.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2735.webp', name: 'IMG_2735.webp', category: 'birthdays', rotation: 180 },
-  { path: '/images/birthdays/IMG_2854.webp', name: 'IMG_2854.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2862.webp', name: 'IMG_2862.webp', category: 'birthdays', rotation: 90 },
-  { path: '/images/birthdays/IMG_2908.webp', name: 'IMG_2908.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2939.webp', name: 'IMG_2939.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2972.webp', name: 'IMG_2972.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_4642.webp', name: 'IMG_4642.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_4644.webp', name: 'IMG_4644.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_5429.webp', name: 'IMG_5429.webp', category: 'birthdays' },
+  // Birthdays - verified existing in public/images/
+  { path: '/images/birthdays/0D617243-2B95-4F80-876D-148EF5266664.jpg', name: '0D617243-2B95-4F80-876D-148EF5266664.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20210905_143754.jpg', name: '20210905_143754.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20231103_171244.jpg', name: '20231103_171244.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20250519_160529.jpg', name: '20250519_160529.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20250519_160613.jpg', name: '20250519_160613.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.jpg', name: '4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/4E4B437F-48E3-4169-9335-C8A235E90DD8.jpg', name: '4E4B437F-48E3-4169-9335-C8A235E90DD8.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/4E67466A-2F9A-4BEF-8275-59611D0D6679.JPEG', name: '4E67466A-2F9A-4BEF-8275-59611D0D6679.JPEG', category: 'birthdays' },
+  { path: '/images/birthdays/4E67466A-2F9A-4BEF-8275-59611D0D6679 copy.JPEG', name: '4E67466A-2F9A-4BEF-8275-59611D0D6679 copy.JPEG', category: 'birthdays' },
+  { path: '/images/birthdays/77E0D959-4DDB-4D6C-89FB-8D65667C40F1.jpg', name: '77E0D959-4DDB-4D6C-89FB-8D65667C40F1.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/8BAEF93C-FA38-4525-AC5C-2AB46D1CF355.jpg', name: '8BAEF93C-FA38-4525-AC5C-2AB46D1CF355.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/9E3BD036-9995-4285-885A-76C705C38329.jpg', name: '9E3BD036-9995-4285-885A-76C705C38329.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/AJYE6187.JPG', name: 'AJYE6187.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.jpg', name: 'D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_0259.JPEG', name: 'IMG_0259.JPEG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_1326.JPEG', name: 'IMG_1326.JPEG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2192.JPG', name: 'IMG_2192.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2669.JPG', name: 'IMG_2669.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2705.JPG', name: 'IMG_2705.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2939.JPG', name: 'IMG_2939.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2972.jpg', name: 'IMG_2972.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_4642.JPG', name: 'IMG_4642.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_4644.JPG', name: 'IMG_4644.JPG', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_5429.JPG', name: 'IMG_5429.JPG', category: 'birthdays' },
 
-  // Bridal Showers - converted to WebP
-  { path: '/images/bridal-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'bridal-showers', rotation: 270 },
-  { path: '/images/bridal-showers/DSC_2863.webp', name: 'DSC_2863.webp', category: 'bridal-showers' },
-  { path: '/images/bridal-showers/LandingPage.webp', name: 'LandingPage.webp', category: 'bridal-showers' },
+  // Bridal Showers - verified existing in public/images/
+  { path: '/images/bridal-showers/20220731_130944.jpg', name: '20220731_130944.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/20221015_175737.jpg', name: '20221015_175737.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/20240811_105747.jpg', name: '20240811_105747.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/DSC_2863.jpg', name: 'DSC_2863.jpg', category: 'bridal-showers' },
+  { path: '/images/bridal-showers/LandingPage.jpg', name: 'LandingPage.jpg', category: 'bridal-showers' },
 
-  // Corporate - converted to WebP
-  { path: '/images/corporate/20210512_115014.webp', name: '20210512_115014.webp', category: 'corporate' },
-  { path: '/images/corporate/20210721_155342.webp', name: '20210721_155342.webp', category: 'corporate' },
-  { path: '/images/corporate/20210816_183032.webp', name: '20210816_183032.webp', category: 'corporate' },
-  { path: '/images/corporate/20220731_130944.webp', name: '20220731_130944.webp', category: 'corporate' },
-  { path: '/images/corporate/20240617_192834.webp', name: '20240617_192834.webp', category: 'corporate', rotation: 270 },
-  { path: '/images/corporate/EIVQ6040.webp', name: 'EIVQ6040.webp', category: 'corporate', rotation: 90 },
-  { path: '/images/corporate/IMG_1428.webp', name: 'IMG_1428.webp', category: 'corporate' },
-  { path: '/images/corporate/IMG_1431.webp', name: 'IMG_1431.webp', category: 'corporate' },
-  { path: '/images/corporate/IMG_2609.webp', name: 'IMG_2609.webp', category: 'corporate', rotation: 270 },
+  // Corporate - verified existing in public/images/
+  { path: '/images/corporate/20210721_155342.jpg', name: '20210721_155342.jpg', category: 'corporate' },
+  { path: '/images/corporate/20210816_183032.jpg', name: '20210816_183032.jpg', category: 'corporate' },
+  { path: '/images/corporate/20240617_192834.jpg', name: '20240617_192834.jpg', category: 'corporate' },
+  { path: '/images/corporate/EIVQ6040.JPG', name: 'EIVQ6040.JPG', category: 'corporate' },
+  { path: '/images/corporate/IMG_1428.JPEG', name: 'IMG_1428.JPEG', category: 'corporate' },
 
-  // Holidays - converted to WebP
-  { path: '/images/holidays/20210509_113246.webp', name: '20210509_113246.webp', category: 'holidays', rotation: 270 },
-  { path: '/images/holidays/20210511_193336.webp', name: '20210511_193336.webp', category: 'holidays', rotation: 270 },
-  { path: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp', name: '339661EC-7B8C-4F55-BD25-280CF2E61A29.webp', category: 'holidays' },
-  { path: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp', name: '49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp', category: 'holidays' },
-  { path: '/images/holidays/IMG_0232.webp', name: 'IMG_0232.webp', category: 'holidays' },
-  { path: '/images/holidays/IMG_6725.webp', name: 'IMG_6725.webp', category: 'holidays' },
+  // Holidays - verified existing in public/images/
+  { path: '/images/holidays/20210509_113246.jpg', name: '20210509_113246.jpg', category: 'holidays' },
+  { path: '/images/holidays/20210511_193336.jpg', name: '20210511_193336.jpg', category: 'holidays' },
+  { path: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', name: '339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg', category: 'holidays' },
+  { path: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', name: '49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg', category: 'holidays' },
+  { path: '/images/holidays/IMG_0232.JPEG', name: 'IMG_0232.JPEG', category: 'holidays' },
 
   // Logo (keeping PNG for logo)
   { path: '/images/Logo_Simple.png', name: 'Logo_Simple.png', category: 'logo' }
@@ -125,9 +110,9 @@ export const preloadImage = (src: string): Promise<void> => {
 // Debug function to test image loading
 export const debugImages = () => {
   if (import.meta.env.DEV) {
-    console.log('🔍 All WebP images loaded:', ALL_IMAGES.length);
+    console.log('🔍 All images loaded:', ALL_IMAGES.length);
     console.log('📂 Categories:', getImageCategories());
-    console.log('✅ Verified existing WebP images only');
+    console.log('✅ Verified existing images only');
   }
 };
 

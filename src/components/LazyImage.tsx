@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { getImageInfo } from '../utils/imageLoader';
 
 interface LazyImageProps {
   src: string;
@@ -44,16 +43,6 @@ const LazyImage: React.FC<LazyImageProps> = ({
   const handleLoad = () => setIsLoaded(true);
   const handleError = () => setHasError(true);
 
-  // Get image info including rotation
-  const imageInfo = getImageInfo(src);
-  const rotation = imageInfo?.rotation || 0;
-  
-  // Apply rotation style if needed
-  const imageStyle = {
-    ...(rotation ? { transform: `rotate(${rotation}deg)` } : {}),
-    ...style
-  };
-
   if (hasError) {
     return (
       <div 
@@ -82,7 +71,6 @@ const LazyImage: React.FC<LazyImageProps> = ({
           className={`w-full h-full object-cover transition-opacity duration-300 ${
             isLoaded ? 'opacity-100' : 'opacity-0'
           }`}
-          style={imageStyle}
           width={width}
           height={height}
           onLoad={handleLoad}
