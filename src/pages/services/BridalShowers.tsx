@@ -26,9 +26,9 @@ const BridalShowers = () => {
     },
     {
       id: 4,
-      src: '/images/bridal-showers/20221015_175734.webp',
-      alt: 'Beautiful bridal shower balloon display with romantic styling',
-      category: 'display'
+      src: '/images/bridal-showers/20230716_105259.webp',
+      alt: 'Elegant bridal shower balloon centerpiece with romantic styling',
+      category: 'centerpiece'
     }
   ];
 

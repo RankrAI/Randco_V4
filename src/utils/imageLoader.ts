@@ -11,7 +11,7 @@ const ALL_IMAGES: ImageInfo[] = [
   // Baby Showers - converted to WebP
   { path: '/images/baby-showers/20220731_185900.webp', name: '20220731_185900.webp', category: 'baby-showers' },
   { path: '/images/baby-showers/20221015_175734.webp', name: '20221015_175734.webp', category: 'baby-showers' },
-  { path: '/images/baby-showers/20221015_175737.webp', name: '20221015_175737.webp', category: 'baby-showers', rotation: 180 },
+  { path: '/images/baby-showers/20221015_175737 (1).webp', name: '20221015_175737 (1).webp', category: 'baby-showers', rotation: 180 },
   { path: '/images/baby-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'baby-showers' },
   { path: '/images/baby-showers/BabyShower.webp', name: 'BabyShower.webp', category: 'baby-showers' },
   { path: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp', category: 'baby-showers' },
@@ -55,7 +55,6 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/birthdays/IMG_5429.webp', name: 'IMG_5429.webp', category: 'birthdays' },
 
   // Bridal Showers - converted to WebP
-  { path: '/images/bridal-showers/20221015_175734.webp', name: '20221015_175734.webp', category: 'bridal-showers' },
   { path: '/images/bridal-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'bridal-showers', rotation: 90 },
   { path: '/images/bridal-showers/DSC_2863.webp', name: 'DSC_2863.webp', category: 'bridal-showers' },
   { path: '/images/bridal-showers/LandingPage.webp', name: 'LandingPage.webp', category: 'bridal-showers' },
