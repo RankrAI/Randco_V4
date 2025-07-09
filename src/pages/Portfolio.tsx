@@ -234,18 +234,6 @@ const Portfolio = () => {
     },
     {
       id: 51,
-      src: '/images/birthdays/IMG_4642.webp',
-      alt: 'Grand birthday celebration balloon display',
-      category: 'birthday'
-    },
-    {
-      id: 52,
-      src: '/images/birthdays/IMG_4644.webp',
-      alt: 'Spectacular birthday balloon arrangement',
-      category: 'birthday'
-    },
-    {
-      id: 53,
       src: '/images/birthdays/D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.webp',
       alt: 'Birthday party balloon decoration',
       category: 'birthday'

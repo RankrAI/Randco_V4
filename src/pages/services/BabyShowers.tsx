@@ -76,7 +76,7 @@ const BabyShowers = () => {
       name: 'Over The Moon',
       description: 'Celestial-inspired designs with stars, moons, and dreamy elements that reach for the sky.',
       colors: ['Midnight Blue', 'Silver', 'Gold', 'Soft White'],
-      image: '/images/baby-showers/20220731_185900.webp'
+      image: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp'
     },
     {
       name: 'Sweet Simplicity',
