@@ -46,7 +46,7 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/birthdays/IMG_2710.webp', name: 'IMG_2710.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2735.webp', name: 'IMG_2735.webp', category: 'birthdays', rotation: 180 },
   { path: '/images/birthdays/IMG_2854.webp', name: 'IMG_2854.webp', category: 'birthdays' },
-  { path: '/images/birthdays/IMG_2862.webp', name: 'IMG_2862.webp', category: 'birthdays' },
+  { path: '/images/birthdays/IMG_2862.webp', name: 'IMG_2862.webp', category: 'birthdays', rotation: 90 },
   { path: '/images/birthdays/IMG_2908.webp', name: 'IMG_2908.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2939.webp', name: 'IMG_2939.webp', category: 'birthdays' },
   { path: '/images/birthdays/IMG_2972.webp', name: 'IMG_2972.webp', category: 'birthdays' },
@@ -55,7 +55,7 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/birthdays/IMG_5429.webp', name: 'IMG_5429.webp', category: 'birthdays' },
 
   // Bridal Showers - converted to WebP
-  { path: '/images/bridal-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'bridal-showers', rotation: 90 },
+  { path: '/images/bridal-showers/20230716_105259.webp', name: '20230716_105259.webp', category: 'bridal-showers', rotation: 270 },
   { path: '/images/bridal-showers/DSC_2863.webp', name: 'DSC_2863.webp', category: 'bridal-showers' },
   { path: '/images/bridal-showers/LandingPage.webp', name: 'LandingPage.webp', category: 'bridal-showers' },
 
@@ -64,15 +64,15 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/corporate/20210721_155342.webp', name: '20210721_155342.webp', category: 'corporate' },
   { path: '/images/corporate/20210816_183032.webp', name: '20210816_183032.webp', category: 'corporate' },
   { path: '/images/corporate/20220731_130944.webp', name: '20220731_130944.webp', category: 'corporate' },
-  { path: '/images/corporate/20240617_192834.webp', name: '20240617_192834.webp', category: 'corporate', rotation: 90 },
+  { path: '/images/corporate/20240617_192834.webp', name: '20240617_192834.webp', category: 'corporate', rotation: 270 },
   { path: '/images/corporate/EIVQ6040.webp', name: 'EIVQ6040.webp', category: 'corporate', rotation: 90 },
   { path: '/images/corporate/IMG_1428.webp', name: 'IMG_1428.webp', category: 'corporate' },
   { path: '/images/corporate/IMG_1431.webp', name: 'IMG_1431.webp', category: 'corporate' },
-  { path: '/images/corporate/IMG_2609.webp', name: 'IMG_2609.webp', category: 'corporate' },
+  { path: '/images/corporate/IMG_2609.webp', name: 'IMG_2609.webp', category: 'corporate', rotation: 270 },
 
   // Holidays - converted to WebP
-  { path: '/images/holidays/20210509_113246.webp', name: '20210509_113246.webp', category: 'holidays', rotation: 90 },
-  { path: '/images/holidays/20210511_193336.webp', name: '20210511_193336.webp', category: 'holidays', rotation: 90 },
+  { path: '/images/holidays/20210509_113246.webp', name: '20210509_113246.webp', category: 'holidays', rotation: 270 },
+  { path: '/images/holidays/20210511_193336.webp', name: '20210511_193336.webp', category: 'holidays', rotation: 270 },
   { path: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp', name: '339661EC-7B8C-4F55-BD25-280CF2E61A29.webp', category: 'holidays' },
   { path: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp', name: '49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp', category: 'holidays' },
   { path: '/images/holidays/IMG_0232.webp', name: 'IMG_0232.webp', category: 'holidays' },
