@@ -9,37 +9,37 @@ const Birthdays = () => {
   const birthdayImages = [
     {
       id: 1,
-      src: '/images/birthdays/IMG_5429.JPG',
+      src: '/images/birthdays/IMG_5429.webp',
       alt: 'Stunning birthday party balloon arch with vibrant colors',
       category: 'arch'
     },
     {
       id: 2,
-      src: '/images/birthdays/IMG_2972.jpg',
+      src: '/images/birthdays/IMG_2972.webp',
       alt: 'Colorful children birthday party balloon setup',
       category: 'children'
     },
     {
       id: 3,
-      src: '/images/birthdays/IMG_2705.JPG',
+      src: '/images/birthdays/IMG_2705.webp',
       alt: 'Elegant adult birthday celebration balloons',
       category: 'adult'
     },
     {
       id: 4,
-      src: '/images/birthdays/IMG_2939.JPG',
+      src: '/images/birthdays/IMG_2939.webp',
       alt: 'Milestone birthday balloon decor',
       category: 'milestone'
     },
     {
       id: 5,
-      src: '/images/birthdays/AJYE6187.JPG',
+      src: '/images/birthdays/AJYE6187.webp',
       alt: 'Professional birthday balloon setup',
       category: 'professional'
     },
     {
       id: 6,
-      src: '/images/birthdays/20210905_143754.jpg',
+      src: '/images/birthdays/20210905_143754.webp',
       alt: 'Elegant adult birthday balloon display',
       category: 'elegant'
     }
@@ -115,7 +115,7 @@ const Birthdays = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/birthdays/IMG_5429.JPG"
+                src="/images/birthdays/IMG_5429.webp"
                 alt="Colorful birthday party balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}

@@ -8,27 +8,21 @@ const BridalShowers = () => {
   const bridalShowerImages = [
     {
       id: 1,
-      src: '/images/bridal-showers/LandingPage.jpg',
+      src: '/images/bridal-showers/LandingPage.webp',
       alt: 'Romantic bridal shower balloon arch with elegant pink and gold design',
       category: 'arch'
     },
     {
       id: 2,
-      src: '/images/bridal-showers/20220731_130944.jpg',
-      alt: 'Elegant bridal shower balloon centerpiece',
-      category: 'centerpiece'
+      src: '/images/bridal-showers/DSC_2863.webp',
+      alt: 'Elegant bridal shower welcome sign with balloon accents',
+      category: 'welcome'
     },
     {
       id: 3,
-      src: '/images/bridal-showers/20240811_105747.jpg',
+      src: '/images/bridal-showers/20221015_175734.webp',
       alt: 'Beautiful bridal shower balloon display with romantic styling',
       category: 'display'
-    },
-    {
-      id: 4,
-      src: '/images/bridal-showers/DSC_2863.jpg',
-      alt: 'Elegant bridal shower welcome sign with balloon accents',
-      category: 'welcome'
     }
   ];
 
@@ -58,25 +52,25 @@ const BridalShowers = () => {
       name: 'Garden Party',
       description: 'Soft pastels with floral accents for an outdoor or garden-inspired celebration.',
       colors: ['Blush Pink', 'Sage Green', 'Cream', 'Gold'],
-      image: '/images/bridal-showers/LandingPage.jpg'
+      image: '/images/bridal-showers/LandingPage.webp'
     },
     {
       name: 'Elegant Romance',
       description: 'Classic romantic colors with sophisticated balloon arrangements.',
       colors: ['Rose Gold', 'Burgundy', 'Ivory', 'Champagne'],
-      image: '/images/bridal-showers/20220731_130944.jpg'
+      image: '/images/bridal-showers/20221015_175734.webp'
     },
     {
       name: 'Modern Chic',
       description: 'Contemporary designs with clean lines and trendy color combinations.',
       colors: ['White', 'Gold', 'Marble', 'Nude'],
-      image: '/images/bridal-showers/20240811_105747.jpg'
+      image: '/images/bridal-showers/20221015_175734.webp'
     },
     {
       name: 'Welcome Signs and Arches',
       description: 'Personalized welcome displays with elegant signage and coordinated balloon arches that greet guests in style.',
       colors: ['Champagne', 'Ivory', 'Rose Gold', 'Soft Blush'],
-      image: '/images/bridal-showers/DSC_2863.jpg'
+      image: '/images/bridal-showers/DSC_2863.webp'
     }
   ];
 
@@ -115,7 +109,7 @@ const BridalShowers = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/bridal-showers/20240811_105747.jpg"
+                src="/images/bridal-showers/LandingPage.webp"
                 alt="Elegant bridal shower balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}

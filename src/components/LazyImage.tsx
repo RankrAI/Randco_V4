@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { getImageInfo } from '../utils/imageLoader';
 
 interface LazyImageProps {
   src: string;
@@ -43,13 +44,15 @@ const LazyImage: React.FC<LazyImageProps> = ({
   const handleLoad = () => setIsLoaded(true);
   const handleError = () => setHasError(true);
 
-  // Generate WebP source URL for better compression
-  const getWebPSrc = (originalSrc: string) => {
-    if (originalSrc.includes('.jpg') || originalSrc.includes('.jpeg') || originalSrc.includes('.JPG') || originalSrc.includes('.JPEG')) {
-      return originalSrc.replace(/\.(jpg|jpeg|JPG|JPEG)$/, '.webp');
-    }
-    return originalSrc;
-  };
+  // Get image info including rotation
+  const imageInfo = getImageInfo(src);
+  const rotation = imageInfo?.rotation || 0;
+  
+  // Apply rotation style if needed
+  const imageStyle = rotation ? { 
+    transform: `rotate(${rotation}deg)`,
+    ...style 
+  } : style;
 
   if (hasError) {
     return (
@@ -73,22 +76,20 @@ const LazyImage: React.FC<LazyImageProps> = ({
         ref={imgRef}
       />
       {isInView && (
-        <picture>
-          <source srcSet={getWebPSrc(src)} type="image/webp" />
-          <img
-            src={src}
-            alt={alt}
-            className={`w-full h-full object-cover transition-opacity duration-300 ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-            width={width}
-            height={height}
-            onLoad={handleLoad}
-            onError={handleError}
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
+        <img
+          src={src}
+          alt={alt}
+          className={`w-full h-full object-cover transition-opacity duration-300 ${
+            isLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={imageStyle}
+          width={width}
+          height={height}
+          onLoad={handleLoad}
+          onError={handleError}
+          loading="lazy"
+          decoding="async"
+        />
       )}
     </div>
   );

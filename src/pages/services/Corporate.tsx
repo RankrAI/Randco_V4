@@ -8,31 +8,31 @@ const Corporate = () => {
   const corporateImages = [
     {
       id: 1,
-      src: '/images/corporate/20210721_155342.jpg',
+      src: '/images/corporate/20210721_155342.webp',
       alt: 'Professional corporate event balloon decor entrance',
       category: 'entrance'
     },
     {
       id: 2,
-      src: '/images/corporate/20210816_183032.jpg',
+      src: '/images/corporate/20210816_183032.webp',
       alt: 'Corporate brand activation balloon display',
       category: 'branding'
     },
     {
       id: 3,
-      src: '/images/corporate/IMG_1428.JPEG',
+      src: '/images/corporate/IMG_1428.webp',
       alt: 'Corporate conference stage backdrop with balloons',
       category: 'conference'
     },
     {
       id: 4,
-      src: '/images/corporate/EIVQ6040.JPG',
+      src: '/images/corporate/EIVQ6040.webp',
       alt: 'Corporate networking event balloon decoration',
       category: 'networking'
     },
     {
       id: 5,
-      src: '/images/corporate/20240617_192834.jpg',
+      src: '/images/corporate/20240617_192834.webp',
       alt: 'Corporate gala balloon setup',
       category: 'gala'
     }
@@ -63,25 +63,25 @@ const Corporate = () => {
     {
       title: 'Fortune 500 Companies',
       description: 'Large-scale corporate events and brand activations',
-      image: '/images/corporate/20210721_155342.jpg',
+      image: '/images/corporate/20210721_155342.webp',
       icon: Building
     },
     {
       title: 'Influencers & VIP Celebrities',
       description: 'Instagram-worthy setups for content creation, brand partnerships, and exclusive events',
-      image: '/images/corporate/20210816_183032.jpg',
+      image: '/images/corporate/20210816_183032.webp',
       icon: Star
     },
     {
       title: 'Retail & Professional Services',
       description: 'Grand openings, launches, and client appreciation events for dentists, optometrists, retail stores, and professional practices',
-      image: '/images/corporate/IMG_1428.JPEG',
+      image: '/images/corporate/IMG_1428.webp',
       icon: ShoppingBag
     },
     {
       title: 'Non-Profits',
       description: 'Uplifting decor for fundraisers, galas, and community events',
-      image: '/images/corporate/EIVQ6040.JPG',
+      image: '/images/corporate/EIVQ6040.webp',
       icon: Heart
     }
   ];
@@ -157,7 +157,7 @@ const Corporate = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/corporate/20210721_155342.jpg"
+                src="/images/corporate/20210721_155342.webp"
                 alt="Professional corporate event balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl"
                 width="600"
