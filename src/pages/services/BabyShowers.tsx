@@ -20,12 +20,18 @@ const BabyShowers = () => {
     },
     {
       id: 3,
+      src: '/images/baby-showers/20230716_105259.webp',
+      alt: 'Sweet baby shower balloon centerpiece with elegant styling',
+      category: 'arrangement'
+    },
+    {
+      id: 4,
       src: '/images/baby-showers/20221015_175734.webp',
       alt: 'Elegant baby shower balloon arrangement',
       category: 'arrangement'
     },
     {
-      id: 4,
+      id: 5,
       src: '/images/baby-showers/BabyShower.webp',
       alt: 'Beautiful baby shower balloon display with elegant styling',
       category: 'display'
@@ -70,7 +76,7 @@ const BabyShowers = () => {
       name: 'Over The Moon',
       description: 'Celestial-inspired designs with stars, moons, and dreamy elements that reach for the sky.',
       colors: ['Midnight Blue', 'Silver', 'Gold', 'Soft White'],
-      image: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp'
+      image: '/images/baby-showers/20221015_175737.webp'
     },
     {
       name: 'Sweet Simplicity',

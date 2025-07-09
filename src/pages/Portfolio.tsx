@@ -10,30 +10,42 @@ const Portfolio = () => {
     // Baby Showers
     {
       id: 1,
+      src: '/images/baby-showers/20230716_105259.webp',
+      alt: 'Sweet baby shower balloon centerpiece with elegant styling',
+      category: 'baby'
+    },
+    {
+      id: 2,
       src: '/images/baby-showers/20221015_175734.webp',
       alt: 'Elegant baby shower balloon arrangement',
       category: 'baby'
     },
     {
-      id: 2,
+      id: 3,
+      src: '/images/baby-showers/20221015_175737.webp',
+      alt: 'Over the moon baby shower balloon display',
+      category: 'baby'
+    },
+    {
+      id: 4,
       src: '/images/baby-showers/20220731_185900.webp',
       alt: 'Baby shower balloon decor setup',
       category: 'baby'
     },
     {
-      id: 3,
+      id: 5,
       src: '/images/baby-showers/BabyShower.webp',
       alt: 'Beautiful baby shower balloon display with elegant styling',
       category: 'baby'
     },
     {
-      id: 4,
+      id: 6,
       src: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp',
       alt: 'Baby shower balloon backdrop with soft colors',
       category: 'baby'
     },
     {
-      id: 5,
+      id: 7,
       src: '/images/baby-showers/IMG_0796.webp',
       alt: 'Sweet baby shower balloon centerpiece with pastel colors',
       category: 'baby'
@@ -41,199 +53,199 @@ const Portfolio = () => {
 
     // Birthdays - verified existing images
     {
-      id: 6,
+      id: 8,
       src: '/images/birthdays/0D617243-2B95-4F80-876D-148EF5266664.webp',
       alt: 'Vibrant birthday party balloon setup',
       category: 'birthday'
     },
     {
-      id: 7,
+      id: 9,
       src: '/images/birthdays/20210905_143754.webp',
       alt: 'Colorful children birthday party balloon setup',
       category: 'birthday'
     },
     {
-      id: 8,
+      id: 10,
       src: '/images/birthdays/20250519_160529.webp',
       alt: 'Modern birthday celebration balloon display',
       category: 'birthday'
     },
     {
-      id: 9,
+      id: 11,
       src: '/images/birthdays/4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.webp',
       alt: 'Birthday celebration balloon decor',
       category: 'birthday'
     },
     {
-      id: 10,
+      id: 12,
       src: '/images/birthdays/4E4B437F-48E3-4169-9335-C8A235E90DD8.webp',
       alt: 'Spectacular birthday balloon installation',
       category: 'birthday'
     },
     {
-      id: 11,
+      id: 13,
       src: '/images/birthdays/4E67466A-2F9A-4BEF-8275-59611D0D6679.webp',
       alt: 'Birthday party balloon decoration',
       category: 'birthday'
     },
     {
-      id: 12,
+      id: 14,
       src: '/images/birthdays/77E0D959-4DDB-4D6C-89FB-8D65667C40F1.webp',
       alt: 'Grand birthday celebration balloon setup',
       category: 'birthday'
     },
     {
-      id: 13,
+      id: 15,
       src: '/images/birthdays/8BAEF93C-FA38-4525-AC5C-2AB46D1CF355.webp',
       alt: 'Colorful birthday balloon arrangement',
       category: 'birthday'
     },
     {
-      id: 14,
+      id: 16,
       src: '/images/birthdays/9E3BD036-9995-4285-885A-76C705C38329.webp',
       alt: 'Birthday party balloon display',
       category: 'birthday'
     },
     {
-      id: 15,
+      id: 17,
       src: '/images/birthdays/AJYE6187.webp',
       alt: 'Professional birthday balloon setup',
       category: 'birthday'
     },
     {
-      id: 16,
+      id: 18,
       src: '/images/birthdays/IMG_0259.webp',
       alt: 'Birthday party balloon centerpiece',
       category: 'birthday'
     },
     {
-      id: 17,
+      id: 19,
       src: '/images/birthdays/IMG_1326.webp',
       alt: 'Birthday celebration balloon display',
       category: 'birthday'
     },
     {
-      id: 18,
+      id: 20,
       src: '/images/birthdays/IMG_2705.webp',
       alt: 'Elegant birthday celebration balloon garland',
       category: 'birthday'
     },
     {
-      id: 19,
+      id: 21,
       src: '/images/birthdays/IMG_2939.webp',
       alt: 'Vibrant birthday party balloon setup',
       category: 'birthday'
     },
     {
-      id: 20,
+      id: 22,
       src: '/images/birthdays/IMG_2972.webp',
       alt: 'Colorful birthday party balloon decoration',
       category: 'birthday'
     },
     {
-      id: 21,
+      id: 23,
       src: '/images/birthdays/IMG_5429.webp',
       alt: 'Stunning birthday party balloon arch with vibrant colors',
       category: 'birthday'
     },
     {
-      id: 35,
+      id: 24,
       src: '/images/birthdays/20231103_171244.webp',
       alt: 'Elegant birthday celebration with sophisticated balloon decor',
       category: 'birthday'
     },
     {
-      id: 36,
+      id: 25,
       src: '/images/birthdays/20250519_160613.webp',
       alt: 'Modern birthday party balloon installation',
       category: 'birthday'
     },
     {
-      id: 37,
+      id: 26,
       src: '/images/birthdays/38CE3FD0-E73C-4455-84DD-177AD3C1B0A2.webp',
       alt: 'Colorful birthday celebration balloon setup',
       category: 'birthday'
     },
     {
-      id: 38,
+      id: 27,
       src: '/images/birthdays/F78A3C15-B69F-4E7A-A6FF-B2A671A82497.webp',
       alt: 'Birthday party balloon arrangement with vibrant colors',
       category: 'birthday'
     },
     {
-      id: 39,
+      id: 28,
       src: '/images/birthdays/IMG_2192.webp',
       alt: 'Professional birthday balloon display',
       category: 'birthday'
     },
     {
-      id: 40,
+      id: 29,
       src: '/images/birthdays/IMG_2243.webp',
       alt: 'Birthday celebration balloon centerpiece',
       category: 'birthday'
     },
     {
-      id: 41,
+      id: 30,
       src: '/images/birthdays/IMG_2255.webp',
       alt: 'Elegant birthday balloon garland',
       category: 'birthday'
     },
     {
-      id: 42,
+      id: 31,
       src: '/images/birthdays/IMG_2339.webp',
       alt: 'Birthday party balloon backdrop',
       category: 'birthday'
     },
     {
-      id: 43,
+      id: 32,
       src: '/images/birthdays/IMG_2353.webp',
       alt: 'Colorful birthday balloon installation',
       category: 'birthday'
     },
     {
-      id: 44,
+      id: 33,
       src: '/images/birthdays/IMG_2583.webp',
       alt: 'Birthday celebration balloon decor',
       category: 'birthday'
     },
     {
-      id: 45,
+      id: 34,
       src: '/images/birthdays/IMG_2669.webp',
       alt: 'Professional birthday balloon setup',
       category: 'birthday'
     },
     {
-      id: 46,
+      id: 35,
       src: '/images/birthdays/IMG_2710.webp',
       alt: 'Birthday party balloon arrangement',
       category: 'birthday'
     },
     {
-      id: 47,
+      id: 36,
       src: '/images/birthdays/IMG_2735.webp',
       alt: 'Elegant birthday balloon display',
       category: 'birthday'
     },
     {
-      id: 48,
+      id: 37,
       src: '/images/birthdays/IMG_2854.webp',
       alt: 'Birthday celebration balloon centerpiece',
       category: 'birthday'
     },
     {
-      id: 49,
+      id: 38,
       src: '/images/birthdays/IMG_2862.webp',
       alt: 'Colorful birthday balloon setup',
       category: 'birthday'
     },
     {
-      id: 50,
+      id: 39,
       src: '/images/birthdays/IMG_2908.webp',
       alt: 'Birthday party balloon installation',
       category: 'birthday'
     },
     {
-      id: 51,
+      id: 40,
       src: '/images/birthdays/D8DA01B9-7A82-4CCB-BDE0-FAE3E5421C6E.webp',
       alt: 'Birthday party balloon decoration',
       category: 'birthday'
@@ -241,19 +253,25 @@ const Portfolio = () => {
 
     // Bridal Showers
     {
-      id: 22,
-      src: '/images/bridal-showers/20221015_175734.webp',
+      id: 41,
+      src: '/images/bridal-showers/20230716_105259.webp',
       alt: 'Elegant bridal shower balloon centerpiece',
       category: 'bridal'
     },
     {
-      id: 23,
+      id: 42,
+      src: '/images/bridal-showers/20221015_175734.webp',
+      alt: 'Beautiful bridal shower balloon arrangement',
+      category: 'bridal'
+    },
+    {
+      id: 43,
       src: '/images/bridal-showers/DSC_2863.webp',
       alt: 'Elegant bridal shower welcome sign with balloon accents',
       category: 'bridal'
     },
     {
-      id: 24,
+      id: 44,
       src: '/images/bridal-showers/LandingPage.webp',
       alt: 'Romantic bridal shower balloon arch with elegant pink and gold design',
       category: 'bridal'
@@ -261,55 +279,55 @@ const Portfolio = () => {
 
     // Corporate
     {
-      id: 25,
+      id: 45,
       src: '/images/corporate/20210721_155342.webp',
       alt: 'Professional corporate event balloon decor entrance',
       category: 'corporate'
     },
     {
-      id: 26,
+      id: 46,
       src: '/images/corporate/20210816_183032.webp',
       alt: 'Corporate brand activation balloon display',
       category: 'corporate'
     },
     {
-      id: 27,
+      id: 47,
       src: '/images/corporate/IMG_1428.webp',
       alt: 'Corporate conference stage backdrop with balloons',
       category: 'corporate'
     },
     {
-      id: 28,
+      id: 48,
       src: '/images/corporate/EIVQ6040.webp',
       alt: 'Corporate networking event balloon decoration',
       category: 'corporate'
     },
     {
-      id: 29,
+      id: 49,
       src: '/images/corporate/20240617_192834.webp',
       alt: 'Corporate gala balloon setup',
       category: 'corporate'
     },
     {
-      id: 54,
+      id: 50,
       src: '/images/corporate/20210512_115014.webp',
       alt: 'Corporate event balloon entrance decor',
       category: 'corporate'
     },
     {
-      id: 55,
+      id: 51,
       src: '/images/corporate/20220731_130944.webp',
       alt: 'Professional corporate balloon display',
       category: 'corporate'
     },
     {
-      id: 56,
+      id: 52,
       src: '/images/corporate/IMG_1431.webp',
       alt: 'Corporate conference balloon backdrop',
       category: 'corporate'
     },
     {
-      id: 57,
+      id: 53,
       src: '/images/corporate/IMG_2609.webp',
       alt: 'Corporate networking event balloon decor',
       category: 'corporate'
@@ -317,37 +335,37 @@ const Portfolio = () => {
 
     // Holidays
     {
-      id: 30,
+      id: 54,
       src: '/images/holidays/20210509_113246.webp',
       alt: 'Festive holiday balloon decor setup',
       category: 'holidays'
     },
     {
-      id: 31,
+      id: 55,
       src: '/images/holidays/20210511_193336.webp',
       alt: 'Beautiful holiday balloon installation with elegant styling',
       category: 'holidays'
     },
     {
-      id: 32,
+      id: 56,
       src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp',
       alt: 'Festive Christmas holiday balloon decor',
       category: 'holidays'
     },
     {
-      id: 33,
+      id: 57,
       src: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp',
       alt: 'Festive holiday party balloon arrangement',
       category: 'holidays'
     },
     {
-      id: 34,
+      id: 58,
       src: '/images/holidays/IMG_0232.webp',
       alt: 'Holiday celebration balloon display',
       category: 'holidays'
     },
     {
-      id: 58,
+      id: 59,
       src: '/images/holidays/IMG_6725.webp',
       alt: 'Festive holiday balloon arrangement',
       category: 'holidays'

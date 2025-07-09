@@ -14,12 +14,18 @@ const BridalShowers = () => {
     },
     {
       id: 2,
+      src: '/images/bridal-showers/20230716_105259.webp',
+      alt: 'Elegant bridal shower balloon centerpiece',
+      category: 'centerpiece'
+    },
+    {
+      id: 3,
       src: '/images/bridal-showers/DSC_2863.webp',
       alt: 'Elegant bridal shower welcome sign with balloon accents',
       category: 'welcome'
     },
     {
-      id: 3,
+      id: 4,
       src: '/images/bridal-showers/20221015_175734.webp',
       alt: 'Beautiful bridal shower balloon display with romantic styling',
       category: 'display'
@@ -58,13 +64,13 @@ const BridalShowers = () => {
       name: 'Elegant Romance',
       description: 'Classic romantic colors with sophisticated balloon arrangements.',
       colors: ['Rose Gold', 'Burgundy', 'Ivory', 'Champagne'],
-      image: '/images/bridal-showers/20221015_175734.webp'
+      image: '/images/bridal-showers/20230716_105259.webp'
     },
     {
       name: 'Modern Chic',
       description: 'Contemporary designs with clean lines and trendy color combinations.',
       colors: ['White', 'Gold', 'Marble', 'Nude'],
-      image: '/images/bridal-showers/20221015_175734.webp'
+      image: '/images/bridal-showers/20230716_105259.webp'
     },
     {
       name: 'Welcome Signs and Arches',
