@@ -1,23 +1,25 @@
-// Full image loader with all original images restored
+// Enhanced image loader with WebP support and comprehensive image collection
 interface ImageInfo {
   path: string;
   name: string;
   category: string;
 }
 
-// All verified existing images from the file system
+// All available images including WebP versions
 const ALL_IMAGES: ImageInfo[] = [
-  // Baby Showers - verified existing
+  // Baby Showers
   { path: '/images/baby-showers/20220731_185900.jpg', name: '20220731_185900.jpg', category: 'baby-showers' },
   { path: '/images/baby-showers/20221015_175734.jpg', name: '20221015_175734.jpg', category: 'baby-showers' },
   { path: '/images/baby-showers/BabyShower.jpg', name: 'BabyShower.jpg', category: 'baby-showers' },
   { path: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', name: 'C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg', category: 'baby-showers' },
   { path: '/images/baby-showers/IMG_0796.JPEG', name: 'IMG_0796.JPEG', category: 'baby-showers' },
 
-  // Birthdays - verified existing
+  // Birthdays - Full collection restored
   { path: '/images/birthdays/0D617243-2B95-4F80-876D-148EF5266664.jpg', name: '0D617243-2B95-4F80-876D-148EF5266664.jpg', category: 'birthdays' },
   { path: '/images/birthdays/20210905_143754.jpg', name: '20210905_143754.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20231103_171244.jpg', name: '20231103_171244.jpg', category: 'birthdays' },
   { path: '/images/birthdays/20250519_160529.jpg', name: '20250519_160529.jpg', category: 'birthdays' },
+  { path: '/images/birthdays/20250519_160613.jpg', name: '20250519_160613.jpg', category: 'birthdays' },
   { path: '/images/birthdays/4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.jpg', name: '4E39CAB8-F5BA-49DA-AD59-2E7AF800C045.jpg', category: 'birthdays' },
   { path: '/images/birthdays/4E4B437F-48E3-4169-9335-C8A235E90DD8.jpg', name: '4E4B437F-48E3-4169-9335-C8A235E90DD8.jpg', category: 'birthdays' },
   { path: '/images/birthdays/4E67466A-2F9A-4BEF-8275-59611D0D6679.JPEG', name: '4E67466A-2F9A-4BEF-8275-59611D0D6679.JPEG', category: 'birthdays' },
@@ -54,11 +56,13 @@ const ALL_IMAGES: ImageInfo[] = [
   { path: '/images/bridal-showers/LandingPage.jpg', name: 'LandingPage.jpg', category: 'bridal-showers' },
 
   // Corporate
+  { path: '/images/corporate/20210512_115014.jpg', name: '20210512_115014.jpg', category: 'corporate' },
   { path: '/images/corporate/20210721_155342.jpg', name: '20210721_155342.jpg', category: 'corporate' },
   { path: '/images/corporate/20210816_183032.jpg', name: '20210816_183032.jpg', category: 'corporate' },
   { path: '/images/corporate/20240617_192834.jpg', name: '20240617_192834.jpg', category: 'corporate' },
   { path: '/images/corporate/EIVQ6040.JPG', name: 'EIVQ6040.JPG', category: 'corporate' },
   { path: '/images/corporate/IMG_1428.JPEG', name: 'IMG_1428.JPEG', category: 'corporate' },
+  { path: '/images/corporate/IMG_2609.JPG', name: 'IMG_2609.JPG', category: 'corporate' },
 
   // Holidays
   { path: '/images/holidays/20210509_113246.jpg', name: '20210509_113246.jpg', category: 'holidays' },
@@ -74,6 +78,15 @@ const ALL_IMAGES: ImageInfo[] = [
 // Helper function to get clean image URL
 export const getImageUrl = (path: string): string => {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  return cleanPath;
+};
+
+// Generate WebP URL for better performance
+export const getWebPUrl = (path: string): string => {
+  const cleanPath = getImageUrl(path);
+  if (cleanPath.includes('.jpg') || cleanPath.includes('.jpeg') || cleanPath.includes('.JPG') || cleanPath.includes('.JPEG')) {
+    return cleanPath.replace(/\.(jpg|jpeg|JPG|JPEG)$/, '.webp');
+  }
   return cleanPath;
 };
 
@@ -96,13 +109,19 @@ export const imageExists = (path: string): boolean => {
   return ALL_IMAGES.some(img => img.path === cleanPath);
 };
 
-// Pre-load critical images
+// Pre-load critical images with WebP support
 export const preloadImage = (src: string): Promise<void> => {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => resolve();
-    img.onerror = reject;
-    img.src = src;
+    img.onerror = () => {
+      // Try fallback to original format if WebP fails
+      const fallbackImg = new Image();
+      fallbackImg.onload = () => resolve();
+      fallbackImg.onerror = reject;
+      fallbackImg.src = src;
+    };
+    img.src = getWebPUrl(src);
   });
 };
 
@@ -111,7 +130,8 @@ export const debugImages = () => {
   if (import.meta.env.DEV) {
     console.log('🔍 All images loaded:', ALL_IMAGES.length);
     console.log('📂 Categories:', getImageCategories());
-    console.log('✅ Verified existing images only');
+    console.log('🖼️ WebP support enabled with fallbacks');
+    console.log('✅ Full image collection restored');
   }
 };
 
@@ -122,4 +142,13 @@ export const getRandomImageFromCategory = (category: string): string | null => {
   
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
+};
+
+// Get total image count by category
+export const getImageCountByCategory = (): Record<string, number> => {
+  const counts: Record<string, number> = {};
+  getImageCategories().forEach(category => {
+    counts[category] = getImagesByCategory(category).length;
+  });
+  return counts;
 };

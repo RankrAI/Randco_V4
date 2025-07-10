@@ -43,6 +43,14 @@ const LazyImage: React.FC<LazyImageProps> = ({
   const handleLoad = () => setIsLoaded(true);
   const handleError = () => setHasError(true);
 
+  // Generate WebP source URL for better compression
+  const getWebPSrc = (originalSrc: string) => {
+    if (originalSrc.includes('.jpg') || originalSrc.includes('.jpeg') || originalSrc.includes('.JPG') || originalSrc.includes('.JPEG')) {
+      return originalSrc.replace(/\.(jpg|jpeg|JPG|JPEG)$/, '.webp');
+    }
+    return originalSrc;
+  };
+
   if (hasError) {
     return (
       <div 
@@ -65,19 +73,22 @@ const LazyImage: React.FC<LazyImageProps> = ({
         ref={imgRef}
       />
       {isInView && (
-        <img
-          src={src}
-          alt={alt}
-          className={`w-full h-full object-cover transition-opacity duration-300 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-          width={width}
-          height={height}
-          onLoad={handleLoad}
-          onError={handleError}
-          loading="lazy"
-          decoding="async"
-        />
+        <picture>
+          <source srcSet={getWebPSrc(src)} type="image/webp" />
+          <img
+            src={src}
+            alt={alt}
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+            width={width}
+            height={height}
+            onLoad={handleLoad}
+            onError={handleError}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       )}
     </div>
   );

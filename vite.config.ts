@@ -47,7 +47,7 @@ export default defineConfig({
     }
   },
   publicDir: 'public',
-  assetsInclude: ['**/*.webp', '**/*.png', '**/*.PNG', '**/*.gif', '**/*.svg'],
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.JPG', '**/*.JPEG', '**/*.png', '**/*.PNG', '**/*.webp', '**/*.gif', '**/*.svg'],
   // Image optimization and compression
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
