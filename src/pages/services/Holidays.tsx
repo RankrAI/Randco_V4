@@ -8,39 +8,33 @@ const Holidays = () => {
   const holidayImages = [
     {
       id: 1,
-      src: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp',
+      src: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg',
       alt: 'Festive holiday party balloon arrangement',
       category: 'party'
     },
     {
       id: 2,
-      src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp',
+      src: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg',
       alt: 'Festive Christmas holiday balloon decor',
       category: 'christmas'
     },
     {
       id: 3,
-      src: '/images/holidays/20210511_193336.webp',
+      src: '/images/holidays/20210511_193336.jpg',
       alt: 'Beautiful holiday balloon installation with elegant styling',
       category: 'installation'
     },
     {
       id: 4,
-      src: '/images/holidays/20210509_113246.webp',
+      src: '/images/holidays/20210509_113246.jpg',
       alt: 'Festive holiday balloon decor setup',
       category: 'setup'
     },
     {
       id: 5,
-      src: '/images/holidays/IMG_0232.webp',
+      src: '/images/holidays/IMG_0232.JPEG',
       alt: 'Holiday celebration balloon display',
       category: 'display'
-    },
-    {
-      id: 6,
-      src: '/images/holidays/IMG_6725.webp',
-      alt: 'Festive holiday balloon arrangement',
-      category: 'festive'
     }
   ];
 
@@ -73,25 +67,25 @@ const Holidays = () => {
       name: 'Winter Wonderland',
       description: 'Elegant white, silver, and blue balloon arrangements that create a magical winter atmosphere.',
       colors: ['White', 'Silver', 'Ice Blue', 'Champagne'],
-      image: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.webp'
+      image: '/images/holidays/339661EC-7B8C-4F55-BD25-280CF2E61A29.jpg'
     },
     {
       name: 'Autumn Harvest',
       description: 'Warm and cozy designs featuring rich autumn colors and harvest-inspired elements.',
       colors: ['Burgundy', 'Gold', 'Orange', 'Deep Red'],
-      image: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp'
+      image: '/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg'
     },
     {
       name: 'Spring Bloom',
       description: 'Fresh and vibrant balloon decor that celebrates renewal and new beginnings.',
       colors: ['Soft Pink', 'Lavender', 'Sage Green', 'Cream'],
-      image: '/images/holidays/20210511_193336.webp'
+      image: '/images/holidays/20210511_193336.jpg'
     },
     {
       name: 'Summer Celebration',
       description: 'Bright and cheerful designs perfect for outdoor gatherings and summer festivities.',
       colors: ['Coral', 'Turquoise', 'Sunny Yellow', 'White'],
-      image: '/images/holidays/20210509_113246.webp'
+      image: '/images/holidays/20210509_113246.jpg'
     }
   ];
 
@@ -130,7 +124,7 @@ const Holidays = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.webp"
+                src="/images/holidays/49C24FD0-D7BB-4870-ACA3-32B6C2476B29.jpg"
                 alt="Festive holiday balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}

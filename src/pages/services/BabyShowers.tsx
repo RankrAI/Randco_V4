@@ -7,25 +7,31 @@ const BabyShowers = () => {
   const babyShowerImages = [
     {
       id: 1,
-      src: '/images/baby-showers/IMG_0796.webp',
+      src: '/images/baby-showers/IMG_0796.JPEG',
       alt: 'Sweet baby shower balloon centerpiece with pastel colors',
       category: 'setup'
     },
     {
       id: 2,
-      src: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp',
+      src: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg',
       alt: 'Baby shower balloon backdrop with soft colors',
       category: 'backdrop'
     },
     {
       id: 3,
-      src: '/images/baby-showers/20221015_175734.webp',
-      alt: 'Over the moon baby shower balloon display with celestial theme',
-      category: 'celestial'
+      src: '/images/baby-showers/20221015_175734.jpg',
+      alt: 'Elegant baby shower balloon arrangement',
+      category: 'arrangement'
     },
     {
       id: 4,
-      src: '/images/baby-showers/BabyShower.webp',
+      src: '/images/baby-showers/20220731_185900.jpg',
+      alt: 'Baby shower balloon decor setup',
+      category: 'decor'
+    },
+    {
+      id: 5,
+      src: '/images/baby-showers/BabyShower.jpg',
       alt: 'Beautiful baby shower balloon display with elegant styling',
       category: 'display'
     }
@@ -57,25 +63,25 @@ const BabyShowers = () => {
       name: 'Teddy Bear Picnic',
       description: 'Adorable teddy bear-inspired designs with warm, cozy colors perfect for welcoming your little cub.',
       colors: ['Honey Brown', 'Cream', 'Soft Pink', 'Sage Green'],
-      image: '/images/baby-showers/IMG_0796.webp'
+      image: '/images/baby-showers/IMG_0796.JPEG'
     },
     {
       name: 'Little Explorer',
       description: 'Adventure-themed decorations perfect for families who love to explore the world together.',
       colors: ['Forest Green', 'Adventure Blue', 'Compass Gold', 'Earth Brown'],
-      image: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.webp'
+      image: '/images/baby-showers/C47AB584-B5E7-4C9A-98BB-521B34F10F71.jpg'
     },
     {
       name: 'Over The Moon',
       description: 'Celestial-inspired designs with stars, moons, and dreamy elements that reach for the sky.',
       colors: ['Midnight Blue', 'Silver', 'Gold', 'Soft White'],
-      image: '/images/baby-showers/20221015_175734.webp'
+      image: '/images/baby-showers/20221015_175734.jpg'
     },
     {
       name: 'Sweet Simplicity',
       description: 'Clean, minimalist designs with soft colors and elegant balloon arrangements.',
       colors: ['Blush Pink', 'Sage Green', 'Cream', 'White'],
-      image: '/images/baby-showers/BabyShower.webp'
+      image: '/images/baby-showers/BabyShower.jpg'
     }
   ];
 
@@ -137,7 +143,7 @@ const BabyShowers = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/baby-showers/BabyShower.webp"
+                src="/images/baby-showers/BabyShower.jpg"
                 alt="Sweet baby shower balloon decor by R&Co Events"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
                 style={{ objectPosition: 'center center' }}
